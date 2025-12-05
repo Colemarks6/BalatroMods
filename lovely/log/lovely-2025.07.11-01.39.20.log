@@ -1,0 +1,1002 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods"
+WARN - [♥] Unknown key `patches.21.?.match_indent` found in patch file at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\Cryptid\\lovely\\code.toml", ignoring it
+WARN - [♥] Unknown key `patches.49.?.match_indent` found in patch file at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.52.?.match_indent` found in patch file at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 826ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 17 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 7 patches to 'engine/controller.lua'
+INFO - [♥] Applied 15 patches to 'back.lua'
+INFO - [♥] Applied 18 patches to 'tag.lua'
+INFO - [♥] Applied 1 patch to 'engine/node.lua'
+INFO - [♥] Applied 3 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 3 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 58 patches to 'functions/misc_functions.lua'
+WARN - [♥] Pattern 'for i = 1, 2 do' on target 'game.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'create_shop_card_ui(card, \'Voucher\', G.shop_vouchers)' on target 'game.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'self.GAME.current_round.voucher = G.SETTINGS.tutorial_progress and G.SETTINGS.tutorial_progress.forced_voucher or SMODS.get_next_vouchers()' on target 'game.lua' for pattern patch from Cryptid\lovely\very_fair.toml resulted in no matches
+WARN - [♥] Pattern 'self.GAME.current_round.voucher = G.SETTINGS.tutorial_progress and G.SETTINGS.tutorial_progress.forced_voucher or get_next_voucher_key()' on target 'game.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Regex 'card\\:start_materialize\\(\\)\\n\\s+G\\.shop_vouchers\\:emplace\\(card\\)\\n\\s+end' on target 'game.lua' for regex patch from Cryptid\lovely\Voucher.toml resulted in no matches
+INFO - [♥] Applied 85 patches to 'game.lua'
+INFO - [♥] Applied 1 patch to 'globals.lua'
+INFO - [♥] Applied 6 patches to 'engine/ui.lua'
+WARN - [♥] Pattern 'G.GAME.shop.joker_max*1.02*G.CARD_W,' on target 'functions/UI_definitions.lua' for pattern patch from Cryptid\lovely\equilibrium.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 104 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'ease_to = G.GAME.chips + math.floor(hand_chips * mult) * (e and e.antiscore and -1 or 1),' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\blind.toml resulted in no matches
+WARN - [♥] Pattern 'if reps[j] ~= 1 then' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\misc.toml resulted in no matches
+WARN - [♥] Pattern 'for i=1, #G.jokers.cards + #G.consumeables.cards do' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\misc.toml resulted in no matches
+WARN - [♥] Pattern 'local effects = {[1] = {playing_card = G.hand.cards[i]:get_end_of_round_effect()}}' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = get_next_voucher_key()' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\sticker.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = get_next_voucher_key()' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if SMODS.has_enhancement(scoring_hand[i], \'m_glass\') and not scoring_hand[i].debuff and pseudorandom(\'glass\') < G.GAME.probabilities.normal/(scoring_hand[i].ability.name == \'Glass Card\' and scoring_hand[i].ability.extra or G.P_CENTERS.m_glass.config.extra) then' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+WARN - [♥] Regex '(?<indent>[\\t ]*)if destroyed then \\n' on target 'functions/state_events.lua' for regex patch from Cryptid\lovely\seal.toml resulted in no matches
+INFO - [♥] Applied 82 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = localize(\'$\')..config.dollars, scale = 1.2*scale, colour = G.C.WHITE, shadow = true, juice = true}}' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\code.toml resulted in no matches
+WARN - [♥] Pattern 'G.shop_jokers.T.w = G.GAME.shop.joker_max*1.01*G.CARD_W' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\equilibrium.toml resulted in no matches
+WARN - [♥] Pattern 'function generate_card_ui(_c, full_UI_table, specific_vars, card_type, badges, hide_desc, main_start, main_end)' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\lib_misc.toml resulted in no matches
+WARN - [♥] Pattern 'elseif v.boss.showdown and (G.GAME.round_resets.ante)%G.GAME.win_ante == 0 and G.GAME.round_resets.ante >= 2 then' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 176 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if ((G.GAME.dollars-G.GAME.bankrupt_at) - 10 >= 0) and' on target 'functions/button_callbacks.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 72 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'if G.GAME.blind and G.GAME.blind.in_blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Steamodded\lovely\calculate_card_added.toml resulted in no matches
+WARN - [♥] Pattern 'if not initial then G.GAME.blind:debuff_card(self) end' on target 'card.lua' for pattern patch from Cryptid\lovely\lib_misc.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'Campfire\' and G.GAME.blind.boss and not (G.GAME.blind.config and G.GAME.blind.config.bonus) and self.ability.x_mult > 1 then' on target 'card.lua' for pattern patch from Cryptid\lovely\misc.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name:find(\'Arcana\') then' on target 'card.lua' for pattern patch from Cryptid\lovely\misprint.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'The Hermit\' or self.ability.consumeable.hand_type or self.ability.name == \'Temperance\' or self.ability.name == \'Black Hole\' then' on target 'card.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.queue_negative_removal then' on target 'card.lua' for pattern patch from Cryptid\lovely\sticker.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = nil' on target 'card.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'elseif self.ability.name == \'Business Card\' then loc_vars = {\'\'..(G.GAME and G.GAME.probabilities.normal or 1), self.ability.extra}' on target 'card.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+WARN - [♥] Pattern 'pseudorandom(\'business\') < G.GAME.probabilities.normal/self.ability.extra then' on target 'card.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+INFO - [♥] Applied 247 patches to 'card.lua'
+INFO - [♥] Applied 19 patches to 'cardarea.lua'
+INFO - [♥] Applied 40 patches to 'blind.lua'
+INFO - [♥] Applied 2 patches to 'card_character.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 4 patches to '=[SMODS _ "src/overrides.lua"]'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-07-11 01:39:27 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [G] 2025-07-11 01:39:28 :: INFO  :: SMODS :: Steamodded v1.0.0~BETA-0406a
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 4 patches to '=[SMODS _ "src/card_draw.lua"]'
+INFO - [G] 2025-07-11 01:39:29 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-07-11 01:39:29 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-07-11 01:39:29 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] [CRYPTID] Loading library file ascended.lua
+INFO - [G] [CRYPTID] Loading library file calculate.lua
+INFO - [G] [CRYPTID] Loading library file content.lua
+INFO - [G] [CRYPTID] Loading library file cross-mod.lua
+INFO - [G] [CRYPTID] Loading library file d20.lua
+INFO - [G] [CRYPTID] Loading library file event.lua
+INFO - [G] [CRYPTID] Loading library file gameset.lua
+INFO - [G] [CRYPTID] Loading library file https.lua
+INFO - [G] 2025-07-11 01:39:29 :: DEBUG :: SMODS.https :: Using https module backend
+INFO - [G] [CRYPTID] Loading library file misc.lua
+INFO - [G] [CRYPTID] Loading library file misprintize.lua
+INFO - [G] [CRYPTID] Loading library file modifiers.lua
+INFO - [G] 2025-07-11 01:39:29 :: WARN  :: Sticker :: Detected duplicate register call on object perishable
+INFO - [G] 2025-07-11 01:39:29 :: WARN  :: Sticker :: Detected duplicate register call on object pinned
+INFO - [G] 2025-07-11 01:39:29 :: WARN  :: Sticker :: Detected duplicate register call on object eternal
+INFO - [G] 2025-07-11 01:39:29 :: WARN  :: Sticker :: Detected duplicate register call on object rental
+INFO - [G] [CRYPTID] Loading library file notifications.lua
+INFO - [G] [CRYPTID] Loading library file overrides.lua
+INFO - [G] [CRYPTID] Loading library file ui.lua
+INFO - [G] [CRYPTID] Loading file achievement.lua
+INFO - [G] [CRYPTID] Loading file blind.lua
+INFO - [G] [CRYPTID] Loading file challenge.lua
+INFO - [G] [CRYPTID] Loading file code.lua
+INFO - [G] [CRYPTID] Loading file deck.lua
+INFO - [G] [CRYPTID] Loading file enhanced.lua
+INFO - [G] [CRYPTID] Loading file epic.lua
+INFO - [G] [CRYPTID] Loading file exotic.lua
+INFO - [G] [CRYPTID] Loading file joker_display.lua
+INFO - [G] [CRYPTID] Loading file m.lua
+INFO - [G] [CRYPTID] Loading file misc.lua
+INFO - [G] [CRYPTID] Loading file misc_joker.lua
+INFO - [G] [CRYPTID] Loading file planet.lua
+INFO - [G] [CRYPTID] Loading file sleeve.lua
+INFO - [G] [CRYPTID] Loading file spectral.lua
+INFO - [G] [CRYPTID] Loading file spooky.lua
+INFO - [G] [CRYPTID] Loading file stake.lua
+INFO - [G] [CRYPTID] Loading file tag.lua
+INFO - [G] [CRYPTID] Loading file test.lua
+INFO - [G] [CRYPTID] Loading file voucher.lua
+INFO - [G] 2025-07-11 01:39:29 :: WARN  :: Atlas :: Object cry_effarcire has the same key as an existing object, not registering.
+INFO - [G] 2025-07-11 01:39:29 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-07-11 01:39:29 :: INFO  :: TIMER :: [0000] Injected Language in 0.001 ms
+INFO - [G] 2025-07-11 01:39:29 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 11.709 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0031] Injected Atlas in 494.119 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0030] Injected Sound in 218.329 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0032] Injected Stake in 0.462 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0008] Injected Rarity in 0.023 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0010] Injected ObjectType in 0.048 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0389] Injected Center in 2.508 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0009] Injected Undiscovered Sprite in 0.012 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0029] Injected Blind in 0.072 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0006] Injected Seal in 0.150 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0004] Injected Suit in 0.049 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0013] Injected Rank in 0.057 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0028] Injected DeckSkin in 0.122 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0016] Injected PokerHand in 0.114 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0031] Injected Challenge in 0.150 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0028] Injected Tag in 0.172 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0010] Injected Sticker in 1.009 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0009] Injected Shader in 186.845 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0002] Injected Keybind in 0.009 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0021] Injected Achievement in 0.053 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0002] Injected nil in 0.008 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0023] Injected Draw Step in 0.107 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 12.220 ms
+INFO - [G] 2025-07-11 01:39:30 :: INFO  :: TIMER :: [0010] Injected Other in 0.014 ms
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:39:37 :: DEBUG :: SMODS.https(1) :: Using https module backend
+INFO - [G] LONG DT @ 46: 0.063891331289076
+INFO - [G] LONG DT @ 46: 0.052786525031262
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:40:39 :: DEBUG :: SMODS.https(2) :: Using https module backend
+INFO - [G] LONG DT @ 94: 0.052686010017948
+INFO - [G] LONG DT @ 97: 0.06107392622158
+INFO - [G] LONG DT @ 97: 0.050328200977263
+INFO - [G] LONG DT @ 112: 0.060531328283496
+INFO - [G] LONG DT @ 112: 0.056442022626797
+INFO - [G] LONG DT @ 112: 0.053057258101438
+INFO - [G] LONG DT @ 113: 0.050649046481151
+INFO - [G] LONG DT @ 116: 0.073728828071084
+INFO - [G] LONG DT @ 116: 0.062604002456866
+INFO - [G] LONG DT @ 116: 0.052793961965492
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:41:39 :: DEBUG :: SMODS.https(3) :: Using https module backend
+INFO - [G] LONG DT @ 176: 0.072709322208601
+INFO - [G] LONG DT @ 176: 0.065980997766881
+INFO - [G] LONG DT @ 176: 0.061028938213504
+INFO - [G] LONG DT @ 176: 0.056763270570804
+INFO - [G] LONG DT @ 176: 0.053366356456643
+INFO - [G] LONG DT @ 177: 0.050626445165313
+INFO - [G] LONG DT @ 179: 0.067257793058376
+INFO - [G] LONG DT @ 179: 0.0616790744467
+INFO - [G] LONG DT @ 179: 0.057087559557362
+INFO - [G] LONG DT @ 179: 0.053677447645892
+INFO - [G] LONG DT @ 179: 0.050776278116714
+INFO - [G] LONG DT @ 183: 0.1
+INFO - [G] LONG DT @ 183: 0.081755759999998
+INFO - [G] LONG DT @ 183: 0.067430088000001
+INFO - [G] LONG DT @ 183: 0.055567590399999
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:42:41 :: DEBUG :: SMODS.https(4) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:43:41 :: DEBUG :: SMODS.https(5) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:44:41 :: DEBUG :: SMODS.https(6) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:45:42 :: DEBUG :: SMODS.https(7) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:46:42 :: DEBUG :: SMODS.https(8) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:47:42 :: DEBUG :: SMODS.https(9) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:48:42 :: DEBUG :: SMODS.https(10) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:49:43 :: DEBUG :: SMODS.https(11) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:50:43 :: DEBUG :: SMODS.https(12) :: Using https module backend
+INFO - [G] 2025-07-11 01:51:37 :: WARN  :: DefaultLogger :: Found effect table with no assigned repetitions during repetition check
+INFO - [G] 2025-07-11 01:51:37 :: WARN  :: DefaultLogger :: Found effect table with no assigned repetitions during repetition check
+INFO - [G] 2025-07-11 01:51:37 :: WARN  :: DefaultLogger :: Found effect table with no assigned repetitions during repetition check
+INFO - [G] 2025-07-11 01:51:37 :: WARN  :: DefaultLogger :: Found effect table with no assigned repetitions during repetition check
+INFO - [G] 2025-07-11 01:51:37 :: WARN  :: DefaultLogger :: Found effect table with no assigned repetitions during repetition check
+INFO - [G] 2025-07-11 01:51:37 :: WARN  :: DefaultLogger :: Found effect table with no assigned repetitions during repetition check
+INFO - [G] 2025-07-11 01:51:37 :: WARN  :: DefaultLogger :: Found effect table with no assigned repetitions during repetition check
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:51:43 :: DEBUG :: SMODS.https(13) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:52:44 :: DEBUG :: SMODS.https(14) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:53:44 :: DEBUG :: SMODS.https(15) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:54:44 :: DEBUG :: SMODS.https(16) :: Using https module backend
+INFO - [G] LONG DT @ 944: 0.068625797137474
+INFO - [G] LONG DT @ 944: 0.06294071770998
+INFO - [G] LONG DT @ 944: 0.058194814167997
+INFO - [G] LONG DT @ 944: 0.054773151334399
+INFO - [G] LONG DT @ 944: 0.051981121067511
+INFO - [G] LONG DT @ 947: 0.070007135423998
+INFO - [G] LONG DT @ 947: 0.063957708339198
+INFO - [G] LONG DT @ 947: 0.059223306671341
+INFO - [G] LONG DT @ 947: 0.055243065337083
+INFO - [G] LONG DT @ 947: 0.052042932269673
+INFO - [G] LONG DT @ 949: 0.070289147569424
+INFO - [G] LONG DT @ 949: 0.064494198055523
+INFO - [G] LONG DT @ 949: 0.059597078444434
+INFO - [G] LONG DT @ 949: 0.055579422755552
+INFO - [G] LONG DT @ 949: 0.052876178204424
+INFO - [G] LONG DT @ 949: 0.050164642563547
+INFO - [G] LONG DT @ 952: 0.069818115750391
+INFO - [G] LONG DT @ 952: 0.063911072600329
+INFO - [G] LONG DT @ 952: 0.059142238080251
+INFO - [G] LONG DT @ 952: 0.055283250464205
+INFO - [G] LONG DT @ 952: 0.052031400371372
+INFO - [G] LONG DT @ 954: 0.071294162938472
+INFO - [G] LONG DT @ 954: 0.065377910350776
+INFO - [G] LONG DT @ 954: 0.060101968280605
+INFO - [G] LONG DT @ 954: 0.056157794624482
+INFO - [G] LONG DT @ 954: 0.052907355699585
+INFO - [G] LONG DT @ 954: 0.050277744559671
+INFO - [G] LONG DT @ 956: 0.070491845156712
+INFO - [G] LONG DT @ 957: 0.064322876125381
+INFO - [G] LONG DT @ 957: 0.059534920900302
+INFO - [G] LONG DT @ 957: 0.055681776720244
+INFO - [G] LONG DT @ 957: 0.052377961376176
+INFO - [G] LONG DT @ 959: 0.072759677931776
+INFO - [G] LONG DT @ 959: 0.066457262345425
+INFO - [G] LONG DT @ 959: 0.061043669876325
+INFO - [G] LONG DT @ 959: 0.056787735901058
+INFO - [G] LONG DT @ 959: 0.053321748720854
+INFO - [G] LONG DT @ 959: 0.050491658976687
+INFO - [G] LONG DT @ 961: 0.07093535565462
+INFO - [G] LONG DT @ 962: 0.064650424523706
+INFO - [G] LONG DT @ 962: 0.059917759618975
+INFO - [G] LONG DT @ 962: 0.056050407695175
+INFO - [G] LONG DT @ 962: 0.053197246156146
+INFO - [G] LONG DT @ 962: 0.050548436924897
+INFO - [G] LONG DT @ 964: 0.070330322731333
+INFO - [G] LONG DT @ 964: 0.064333378185071
+INFO - [G] LONG DT @ 964: 0.059275742548063
+INFO - [G] LONG DT @ 964: 0.055573634038453
+INFO - [G] LONG DT @ 964: 0.05229662723076
+INFO - [G] LONG DT @ 966: 0.069507348285877
+INFO - [G] LONG DT @ 966: 0.063494418628701
+INFO - [G] LONG DT @ 966: 0.059002734902953
+INFO - [G] LONG DT @ 967: 0.055082427922371
+INFO - [G] LONG DT @ 967: 0.052037102337885
+INFO - [G] LONG DT @ 969: 0.069939295867637
+INFO - [G] LONG DT @ 969: 0.064119916694127
+INFO - [G] LONG DT @ 969: 0.059378513355297
+INFO - [G] LONG DT @ 969: 0.055738730684231
+INFO - [G] LONG DT @ 969: 0.052424884547399
+INFO - [G] LONG DT @ 971: 0.069162574436769
+INFO - [G] LONG DT @ 971: 0.063285079549423
+INFO - [G] LONG DT @ 971: 0.058510143639529
+INFO - [G] LONG DT @ 971: 0.054846174911613
+INFO - [G] LONG DT @ 971: 0.051962159929311
+INFO - [G] LONG DT @ 974: 0.069969849085256
+INFO - [G] LONG DT @ 974: 0.064042779268199
+INFO - [G] LONG DT @ 974: 0.059178643414549
+INFO - [G] LONG DT @ 974: 0.055350814731646
+INFO - [G] LONG DT @ 974: 0.052255551785316
+INFO - [G] LONG DT @ 976: 0.071367169411555
+INFO - [G] LONG DT @ 976: 0.065575315529233
+INFO - [G] LONG DT @ 976: 0.060470632423382
+INFO - [G] LONG DT @ 976: 0.056485845938716
+INFO - [G] LONG DT @ 976: 0.053353936750982
+INFO - [G] LONG DT @ 976: 0.050507029400764
+INFO - [G] LONG DT @ 979: 0.070304959647053
+INFO - [G] LONG DT @ 979: 0.064141367717622
+INFO - [G] LONG DT @ 979: 0.059412514174105
+INFO - [G] LONG DT @ 979: 0.055720251339283
+INFO - [G] LONG DT @ 979: 0.052441441071427
+INFO - [G] LONG DT @ 979: 0.05010571285715
+INFO - [G] LONG DT @ 981: 0.073007080011362
+INFO - [G] LONG DT @ 981: 0.066473704009079
+INFO - [G] LONG DT @ 981: 0.06122286320727
+INFO - [G] LONG DT @ 981: 0.056904710565829
+INFO - [G] LONG DT @ 981: 0.053555428452646
+INFO - [G] LONG DT @ 981: 0.050702162762121
+INFO - [G] LONG DT @ 984: 0.069757877795204
+INFO - [G] LONG DT @ 984: 0.06395012223615
+INFO - [G] LONG DT @ 984: 0.059716837788937
+INFO - [G] LONG DT @ 984: 0.055828990231143
+INFO - [G] LONG DT @ 984: 0.052973012184914
+INFO - [G] LONG DT @ 984: 0.050208629747937
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:55:45 :: DEBUG :: SMODS.https(17) :: Using https module backend
+INFO - [G] LONG DT @ 986: 0.071073627436997
+INFO - [G] LONG DT @ 986: 0.064738241949597
+INFO - [G] LONG DT @ 986: 0.059670773559684
+INFO - [G] LONG DT @ 986: 0.055959518847757
+INFO - [G] LONG DT @ 986: 0.052790995078192
+INFO - [G] LONG DT @ 986: 0.050605936062557
+INFO - [G] LONG DT @ 988: 0.070051712325845
+INFO - [G] LONG DT @ 988: 0.064146089860682
+INFO - [G] LONG DT @ 989: 0.059275491888545
+INFO - [G] LONG DT @ 989: 0.055531193510822
+INFO - [G] LONG DT @ 989: 0.05310449480866
+INFO - [G] LONG DT @ 989: 0.050686255846934
+INFO - [G] LONG DT @ 991: 0.070465453567875
+INFO - [G] LONG DT @ 991: 0.064658482854302
+INFO - [G] LONG DT @ 991: 0.059768426283452
+INFO - [G] LONG DT @ 991: 0.055912981026766
+INFO - [G] LONG DT @ 991: 0.052931864821392
+INFO - [G] LONG DT @ 991: 0.050311911857116
+INFO - [G] LONG DT @ 993: 0.069683388656216
+INFO - [G] LONG DT @ 993: 0.063655930924983
+INFO - [G] LONG DT @ 993: 0.058970184739987
+INFO - [G] LONG DT @ 993: 0.055063627791989
+INFO - [G] LONG DT @ 994: 0.051962102233581
+INFO - [G] LONG DT @ 996: 0.071066299787775
+INFO - [G] LONG DT @ 996: 0.064974679830211
+INFO - [G] LONG DT @ 996: 0.06024118386417
+INFO - [G] LONG DT @ 996: 0.056424947091334
+INFO - [G] LONG DT @ 996: 0.053039697673083
+INFO - [G] LONG DT @ 996: 0.05054249813845
+INFO - [G] LONG DT @ 998: 0.069910354697088
+INFO - [G] LONG DT @ 998: 0.064018003757669
+INFO - [G] LONG DT @ 998: 0.059233943006144
+INFO - [G] LONG DT @ 998: 0.055287254404922
+INFO - [G] LONG DT @ 999: 0.052511323523929
+INFO - [G] LONG DT @ 1001: 0.070222646004163
+INFO - [G] LONG DT @ 1001: 0.064097776803323
+INFO - [G] LONG DT @ 1001: 0.05939268144266
+INFO - [G] LONG DT @ 1001: 0.055395565154141
+INFO - [G] LONG DT @ 1001: 0.052439892123321
+INFO - [G] LONG DT @ 1001: 0.050082553698647
+INFO - [G] LONG DT @ 1003: 0.069937950582935
+INFO - [G] LONG DT @ 1003: 0.064055600466335
+INFO - [G] LONG DT @ 1003: 0.059049420373073
+INFO - [G] LONG DT @ 1003: 0.055306616298459
+INFO - [G] LONG DT @ 1003: 0.052051533038781
+INFO - [G] LONG DT @ 1006: 0.068006156896554
+INFO - [G] LONG DT @ 1006: 0.062493525517263
+INFO - [G] LONG DT @ 1006: 0.05810346041381
+INFO - [G] LONG DT @ 1006: 0.054302988331033
+INFO - [G] LONG DT @ 1006: 0.051431830664832
+INFO - [G] LONG DT @ 1008: 0.070681448002391
+INFO - [G] LONG DT @ 1008: 0.064530958401896
+INFO - [G] LONG DT @ 1008: 0.059479546721519
+INFO - [G] LONG DT @ 1008: 0.056186457377225
+INFO - [G] LONG DT @ 1008: 0.053104785901783
+INFO - [G] LONG DT @ 1009: 0.050523868721418
+INFO - [G] LONG DT @ 1011: 0.069317433724002
+INFO - [G] LONG DT @ 1011: 0.063595546979201
+INFO - [G] LONG DT @ 1011: 0.058866357583361
+INFO - [G] LONG DT @ 1011: 0.055136286066686
+INFO - [G] LONG DT @ 1011: 0.051953508853343
+INFO - [G] LONG DT @ 1013: 0.07096428852896
+INFO - [G] LONG DT @ 1014: 0.064769230823166
+INFO - [G] LONG DT @ 1014: 0.059816884658533
+INFO - [G] LONG DT @ 1014: 0.05596388772682
+INFO - [G] LONG DT @ 1014: 0.052614110181459
+INFO - [G] LONG DT @ 1014: 0.050576928145171
+INFO - [G] LONG DT @ 1016: 0.071968836565021
+INFO - [G] LONG DT @ 1016: 0.065599329252019
+INFO - [G] LONG DT @ 1016: 0.060446563401611
+INFO - [G] LONG DT @ 1016: 0.056265290721296
+INFO - [G] LONG DT @ 1016: 0.053361392577048
+INFO - [G] LONG DT @ 1016: 0.05056731406162
+INFO - [G] LONG DT @ 1019: 0.071863044249582
+INFO - [G] LONG DT @ 1019: 0.065483935399663
+INFO - [G] LONG DT @ 1019: 0.060630268319728
+INFO - [G] LONG DT @ 1019: 0.056406614655771
+INFO - [G] LONG DT @ 1019: 0.052926631724632
+INFO - [G] LONG DT @ 1019: 0.050450865379708
+INFO - [G] LONG DT @ 1021: 0.071050970240737
+INFO - [G] LONG DT @ 1021: 0.064774516192589
+INFO - [G] LONG DT @ 1022: 0.060021652954086
+INFO - [G] LONG DT @ 1022: 0.055946602363253
+INFO - [G] LONG DT @ 1022: 0.052848521890624
+INFO - [G] LONG DT @ 1022: 0.050123057512485
+INFO - [G] LONG DT @ 1024: 0.071894427105037
+INFO - [G] LONG DT @ 1024: 0.065425081684044
+INFO - [G] LONG DT @ 1024: 0.060639765347233
+INFO - [G] LONG DT @ 1024: 0.056434472277772
+INFO - [G] LONG DT @ 1024: 0.053136897822219
+INFO - [G] LONG DT @ 1024: 0.050482618257779
+INFO - [G] LONG DT @ 1027: 0.071417816280587
+INFO - [G] LONG DT @ 1027: 0.065231613024481
+INFO - [G] LONG DT @ 1027: 0.060164830419581
+INFO - [G] LONG DT @ 1027: 0.056930144335684
+INFO - [G] LONG DT @ 1027: 0.053433895468552
+INFO - [G] LONG DT @ 1027: 0.050912236374809
+INFO - [G] LONG DT @ 1029: 0.071454993194191
+INFO - [G] LONG DT @ 1029: 0.06538809455536
+INFO - [G] LONG DT @ 1029: 0.06021775564426
+INFO - [G] LONG DT @ 1029: 0.055149004515397
+INFO - [G] LONG DT @ 1043: 0.1
+INFO - [G] LONG DT @ 1043: 0.1
+INFO - [G] LONG DT @ 1043: 0.081935719999983
+INFO - [G] LONG DT @ 1043: 0.067571076000007
+INFO - [G] LONG DT @ 1043: 0.055930240800012
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:56:51 :: DEBUG :: SMODS.https(18) :: Using https module backend
+INFO - [G] LONG DT @ 1048: 0.057094585146104
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:57:51 :: DEBUG :: SMODS.https(19) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:58:51 :: DEBUG :: SMODS.https(20) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 01:59:52 :: DEBUG :: SMODS.https(21) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:00:52 :: DEBUG :: SMODS.https(22) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:01:52 :: DEBUG :: SMODS.https(23) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:02:53 :: DEBUG :: SMODS.https(24) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:03:53 :: DEBUG :: SMODS.https(25) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:04:53 :: DEBUG :: SMODS.https(26) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:05:53 :: DEBUG :: SMODS.https(27) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:06:54 :: DEBUG :: SMODS.https(28) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:07:54 :: DEBUG :: SMODS.https(29) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:08:54 :: DEBUG :: SMODS.https(30) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:09:54 :: DEBUG :: SMODS.https(31) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:10:55 :: DEBUG :: SMODS.https(32) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:11:55 :: DEBUG :: SMODS.https(33) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:12:55 :: DEBUG :: SMODS.https(34) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:13:56 :: DEBUG :: SMODS.https(35) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:14:56 :: DEBUG :: SMODS.https(36) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:15:56 :: DEBUG :: SMODS.https(37) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:16:56 :: DEBUG :: SMODS.https(38) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:17:57 :: DEBUG :: SMODS.https(39) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:18:57 :: DEBUG :: SMODS.https(40) :: Using https module backend
+INFO - [G] LONG DT @ 2407: 0.093681974810981
+INFO - [G] LONG DT @ 2407: 0.083126379848775
+INFO - [G] LONG DT @ 2407: 0.074575443879005
+INFO - [G] LONG DT @ 2407: 0.067720955103157
+INFO - [G] LONG DT @ 2407: 0.062216844082572
+INFO - [G] LONG DT @ 2407: 0.057961535266033
+INFO - [G] LONG DT @ 2407: 0.054430628212868
+INFO - [G] LONG DT @ 2407: 0.051544702570264
+INFO - [G] LONG DT @ 2409: 0.066420439303827
+INFO - [G] LONG DT @ 2409: 0.06129253144303
+INFO - [G] LONG DT @ 2409: 0.057211285154472
+INFO - [G] LONG DT @ 2410: 0.053839908123591
+INFO - [G] LONG DT @ 2410: 0.051301926498876
+INFO - [G] LONG DT @ 2412: 0.069824712872332
+INFO - [G] LONG DT @ 2412: 0.064272170297863
+INFO - [G] LONG DT @ 2412: 0.05958219623828
+INFO - [G] LONG DT @ 2412: 0.055998176990612
+INFO - [G] LONG DT @ 2412: 0.052939261592518
+INFO - [G] LONG DT @ 2412: 0.05050948927399
+INFO - [G] LONG DT @ 2414: 0.069125998384646
+INFO - [G] LONG DT @ 2414: 0.063320398707797
+INFO - [G] LONG DT @ 2414: 0.058931518966172
+INFO - [G] LONG DT @ 2414: 0.055209695172967
+INFO - [G] LONG DT @ 2414: 0.052790356138409
+INFO - [G] LONG DT @ 2414: 0.050420484910677
+INFO - [G] LONG DT @ 2417: 0.061123456724275
+INFO - [G] LONG DT @ 2417: 0.050872225379374
+INFO - [G] LONG DT @ 2417: 0.061248300303459
+INFO - [G] LONG DT @ 2417: 0.051892720242846
+INFO - [G] LONG DT @ 2417: 0.05495468095536
+INFO - [G] LONG DT @ 2417: 0.050896558980412
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:19:57 :: DEBUG :: SMODS.https(41) :: Using https module backend
+INFO - [G] LONG DT @ 2446: 0.061770387525048
+INFO - [G] LONG DT @ 2446: 0.051597150020021
+INFO - [G] LONG DT @ 2447: 0.062195968829229
+INFO - [G] LONG DT @ 2447: 0.051666455063355
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:20:58 :: DEBUG :: SMODS.https(42) :: Using https module backend
+INFO - [G] LONG DT @ 2535: 0.062126005062052
+INFO - [G] LONG DT @ 2535: 0.051825364049634
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:21:58 :: DEBUG :: SMODS.https(43) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:22:58 :: DEBUG :: SMODS.https(44) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:23:59 :: DEBUG :: SMODS.https(45) :: Using https module backend
+INFO - [G] LONG DT @ 2676: 0.052831553719336
+INFO - [G] LONG DT @ 2676: 0.050518022975399
+INFO - [G] LONG DT @ 2678: 0.069244014456713
+INFO - [G] LONG DT @ 2678: 0.063857891565327
+INFO - [G] LONG DT @ 2678: 0.059483113252253
+INFO - [G] LONG DT @ 2678: 0.055914170601804
+INFO - [G] LONG DT @ 2678: 0.053110996481435
+INFO - [G] LONG DT @ 2678: 0.050961117185203
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:24:59 :: DEBUG :: SMODS.https(46) :: Using https module backend
+INFO - [G] LONG DT @ 2739: 0.057440410659469
+INFO - [G] LONG DT @ 2747: 0.077680068599724
+INFO - [G] LONG DT @ 2747: 0.070799554879765
+INFO - [G] LONG DT @ 2747: 0.065148063903811
+INFO - [G] LONG DT @ 2747: 0.060754571123077
+INFO - [G] LONG DT @ 2747: 0.057102796898465
+INFO - [G] LONG DT @ 2747: 0.054441477518699
+INFO - [G] LONG DT @ 2747: 0.052150482014978
+INFO - [G] LONG DT @ 2747: 0.050340105612007
+INFO - [G] LONG DT @ 2750: 0.071459643105827
+INFO - [G] LONG DT @ 2750: 0.065898374484608
+INFO - [G] LONG DT @ 2750: 0.061448579587697
+INFO - [G] LONG DT @ 2750: 0.058304143670187
+INFO - [G] LONG DT @ 2750: 0.055267974936136
+INFO - [G] LONG DT @ 2750: 0.052753379948928
+INFO - [G] LONG DT @ 2750: 0.050704523959089
+INFO - [G] LONG DT @ 2764: 0.054656264497371
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:25:59 :: DEBUG :: SMODS.https(47) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:27:00 :: DEBUG :: SMODS.https(48) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:28:00 :: DEBUG :: SMODS.https(49) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:29:00 :: DEBUG :: SMODS.https(50) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:30:00 :: DEBUG :: SMODS.https(51) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:31:01 :: DEBUG :: SMODS.https(52) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:32:01 :: DEBUG :: SMODS.https(53) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:33:01 :: DEBUG :: SMODS.https(54) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:34:01 :: DEBUG :: SMODS.https(55) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:35:02 :: DEBUG :: SMODS.https(56) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:36:02 :: DEBUG :: SMODS.https(57) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:37:02 :: DEBUG :: SMODS.https(58) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:38:03 :: DEBUG :: SMODS.https(59) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:39:03 :: DEBUG :: SMODS.https(60) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:40:03 :: DEBUG :: SMODS.https(61) :: Using https module backend
+INFO - [G] LONG DT @ 3667: 0.078509954789908
+INFO - [G] LONG DT @ 3667: 0.065421263831865
+INFO - [G] LONG DT @ 3667: 0.054750891065532
+INFO - [G] LONG DT @ 3669: 0.066256098360697
+INFO - [G] LONG DT @ 3669: 0.062634678688506
+INFO - [G] LONG DT @ 3669: 0.054415602950867
+INFO - [G] LONG DT @ 3676: 0.084809879703481
+INFO - [G] LONG DT @ 3676: 0.076725063762851
+INFO - [G] LONG DT @ 3676: 0.070638911010235
+INFO - [G] LONG DT @ 3676: 0.065688828808243
+INFO - [G] LONG DT @ 3676: 0.062243303046598
+INFO - [G] LONG DT @ 3676: 0.059356022437201
+INFO - [G] LONG DT @ 3676: 0.057263617949765
+INFO - [G] LONG DT @ 3676: 0.055575194359818
+INFO - [G] LONG DT @ 3676: 0.053691935487882
+INFO - [G] LONG DT @ 3676: 0.052367348390344
+INFO - [G] LONG DT @ 3676: 0.051210558712213
+INFO - [G] LONG DT @ 3679: 0.077913982216981
+INFO - [G] LONG DT @ 3679: 0.071504665773612
+INFO - [G] LONG DT @ 3679: 0.066431872618939
+INFO - [G] LONG DT @ 3679: 0.061965018095149
+INFO - [G] LONG DT @ 3680: 0.058490034476084
+INFO - [G] LONG DT @ 3680: 0.05608140758084
+INFO - [G] LONG DT @ 3680: 0.053932466064673
+INFO - [G] LONG DT @ 3680: 0.052506572851775
+INFO - [G] LONG DT @ 3680: 0.050999198281402
+INFO - [G] LONG DT @ 3683: 0.076190693743033
+INFO - [G] LONG DT @ 3683: 0.070032634994394
+INFO - [G] LONG DT @ 3683: 0.065055507995569
+INFO - [G] LONG DT @ 3683: 0.061060566396465
+INFO - [G] LONG DT @ 3683: 0.057870053117132
+INFO - [G] LONG DT @ 3683: 0.055287142493709
+INFO - [G] LONG DT @ 3683: 0.053048593995002
+INFO - [G] LONG DT @ 3683: 0.051455035195921
+INFO - [G] LONG DT @ 3683: 0.050156868156801
+INFO - [G] LONG DT @ 3686: 0.075116124470616
+INFO - [G] LONG DT @ 3686: 0.069083259576409
+INFO - [G] LONG DT @ 3686: 0.064087927661188
+INFO - [G] LONG DT @ 3686: 0.060166662128936
+INFO - [G] LONG DT @ 3686: 0.057082409703151
+INFO - [G] LONG DT @ 3686: 0.054457027762483
+INFO - [G] LONG DT @ 3686: 0.052485062210031
+INFO - [G] LONG DT @ 3686: 0.050834369768
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:41:04 :: DEBUG :: SMODS.https(62) :: Using https module backend
+INFO - [G] LONG DT @ 3702: 0.056543658017539
+INFO - [G] LONG DT @ 3702: 0.08973172641401
+INFO - [G] LONG DT @ 3702: 0.1
+INFO - [G] LONG DT @ 3702: 0.082854079999997
+INFO - [G] LONG DT @ 3702: 0.068962703999972
+INFO - [G] LONG DT @ 3702: 0.057972903199948
+INFO - [G] LONG DT @ 3707: 0.073918589171759
+INFO - [G] LONG DT @ 3707: 0.063903851337379
+INFO - [G] LONG DT @ 3707: 0.053964401069964
+INFO - [G] LONG DT @ 3732: 0.084913717696605
+INFO - [G] LONG DT @ 3733: 0.072517154157308
+INFO - [G] LONG DT @ 3733: 0.061632623325793
+INFO - [G] LONG DT @ 3733: 0.052256598660677
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:42:04 :: DEBUG :: SMODS.https(63) :: Using https module backend
+INFO - [G] LONG DT @ 3770: 0.097740419261407
+INFO - [G] LONG DT @ 3770: 0.087324755409095
+INFO - [G] LONG DT @ 3770: 0.079079004327283
+INFO - [G] LONG DT @ 3770: 0.072356783461816
+INFO - [G] LONG DT @ 3771: 0.067149966769457
+INFO - [G] LONG DT @ 3771: 0.063023733415622
+INFO - [G] LONG DT @ 3771: 0.059441266732452
+INFO - [G] LONG DT @ 3771: 0.056723233385994
+INFO - [G] LONG DT @ 3771: 0.05495344670877
+INFO - [G] LONG DT @ 3771: 0.053560517367013
+INFO - [G] LONG DT @ 3771: 0.052145593893587
+INFO - [G] LONG DT @ 3771: 0.050890975114932
+INFO - [G] LONG DT @ 3774: 0.077134584766987
+INFO - [G] LONG DT @ 3774: 0.071050707813611
+INFO - [G] LONG DT @ 3774: 0.065954526250902
+INFO - [G] LONG DT @ 3774: 0.062013981000709
+INFO - [G] LONG DT @ 3774: 0.059027384800509
+INFO - [G] LONG DT @ 3774: 0.056449527840408
+INFO - [G] LONG DT @ 3774: 0.054525022272351
+INFO - [G] LONG DT @ 3775: 0.052784017817845
+INFO - [G] LONG DT @ 3775: 0.051380354254311
+INFO - [G] LONG DT @ 3775: 0.050343763403445
+INFO - [G] LONG DT @ 3778: 0.078970102093591
+INFO - [G] LONG DT @ 3778: 0.072537121674894
+INFO - [G] LONG DT @ 3778: 0.067538377339914
+INFO - [G] LONG DT @ 3778: 0.063252861871922
+INFO - [G] LONG DT @ 3778: 0.059973769497564
+INFO - [G] LONG DT @ 3778: 0.057197055598048
+INFO - [G] LONG DT @ 3778: 0.055049664478413
+INFO - [G] LONG DT @ 3779: 0.053301971582774
+INFO - [G] LONG DT @ 3779: 0.052010757266196
+INFO - [G] LONG DT @ 3779: 0.050791385812948
+INFO - [G] LONG DT @ 3782: 0.079468857327223
+INFO - [G] LONG DT @ 3782: 0.072962765861833
+INFO - [G] LONG DT @ 3782: 0.068380892689426
+INFO - [G] LONG DT @ 3782: 0.064025774151543
+INFO - [G] LONG DT @ 3782: 0.060376399321272
+INFO - [G] LONG DT @ 3782: 0.057439219456945
+INFO - [G] LONG DT @ 3782: 0.055187315565609
+INFO - [G] LONG DT @ 3782: 0.053712992452442
+INFO - [G] LONG DT @ 3782: 0.052164613962017
+INFO - [G] LONG DT @ 3782: 0.05093491116954
+INFO - [G] LONG DT @ 3801: 0.055942344780251
+INFO - [G] LONG DT @ 3805: 0.077294530588637
+INFO - [G] LONG DT @ 3805: 0.071258824470947
+INFO - [G] LONG DT @ 3805: 0.060582759576722
+INFO - [G] LONG DT @ 3806: 0.051108287661365
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:43:05 :: DEBUG :: SMODS.https(64) :: Using https module backend
+INFO - [G] LONG DT @ 3859: 0.088978082504413
+INFO - [G] LONG DT @ 3859: 0.074343666003508
+INFO - [G] LONG DT @ 3859: 0.062811612802835
+INFO - [G] LONG DT @ 3859: 0.053603710242228
+INFO - [G] LONG DT @ 3868: 0.06937255999821
+INFO - [G] LONG DT @ 3869: 0.064870067998523
+INFO - [G] LONG DT @ 3869: 0.061161554398856
+INFO - [G] LONG DT @ 3869: 0.05837952351905
+INFO - [G] LONG DT @ 3869: 0.056114518815206
+INFO - [G] LONG DT @ 3869: 0.05477215505225
+INFO - [G] LONG DT @ 3869: 0.053615084041793
+INFO - [G] LONG DT @ 3869: 0.052349447233438
+INFO - [G] LONG DT @ 3869: 0.051268277786721
+INFO - [G] LONG DT @ 3869: 0.050572702229364
+INFO - [G] LONG DT @ 3873: 0.079102308801686
+INFO - [G] LONG DT @ 3873: 0.072903347041397
+INFO - [G] LONG DT @ 3873: 0.067957177633111
+INFO - [G] LONG DT @ 3873: 0.063891982106502
+INFO - [G] LONG DT @ 3873: 0.060705085685189
+INFO - [G] LONG DT @ 3873: 0.05800530854813
+INFO - [G] LONG DT @ 3873: 0.056018626838543
+INFO - [G] LONG DT @ 3873: 0.054294761470754
+INFO - [G] LONG DT @ 3873: 0.052734769176672
+INFO - [G] LONG DT @ 3873: 0.051774735341285
+INFO - [G] LONG DT @ 3873: 0.050729488273022
+INFO - [G] LONG DT @ 3873: 0.050088210618425
+INFO - [G] LONG DT @ 3877: 0.079486894454602
+INFO - [G] LONG DT @ 3877: 0.073468435563619
+INFO - [G] LONG DT @ 3877: 0.068332948450887
+INFO - [G] LONG DT @ 3877: 0.064156818760762
+INFO - [G] LONG DT @ 3877: 0.060775495008565
+INFO - [G] LONG DT @ 3877: 0.058176796006872
+INFO - [G] LONG DT @ 3877: 0.056199096805491
+INFO - [G] LONG DT @ 3877: 0.054583817444397
+INFO - [G] LONG DT @ 3877: 0.053399713955526
+INFO - [G] LONG DT @ 3877: 0.052060791164432
+INFO - [G] LONG DT @ 3877: 0.051111572931503
+INFO - [G] LONG DT @ 3877: 0.05023417834526
+INFO - [G] LONG DT @ 3877: 0.050052362676169
+INFO - [G] LONG DT @ 3877: 0.05003699014095
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:44:05 :: DEBUG :: SMODS.https(65) :: Using https module backend
+INFO - [G] LONG DT @ 3881: 0.080023007117991
+INFO - [G] LONG DT @ 3881: 0.073461805694448
+INFO - [G] LONG DT @ 3881: 0.068285464555514
+INFO - [G] LONG DT @ 3881: 0.064156231644391
+INFO - [G] LONG DT @ 3881: 0.060746745315499
+INFO - [G] LONG DT @ 3881: 0.057945556252481
+INFO - [G] LONG DT @ 3881: 0.055717565001979
+INFO - [G] LONG DT @ 3881: 0.053897512001579
+INFO - [G] LONG DT @ 3881: 0.052841729601229
+INFO - [G] LONG DT @ 3882: 0.051868983680994
+INFO - [G] LONG DT @ 3882: 0.050957326944755
+INFO - [G] LONG DT @ 3882: 0.050244861555814
+INFO - [G] LONG DT @ 3885: 0.080969390060871
+INFO - [G] LONG DT @ 3885: 0.074441812048723
+INFO - [G] LONG DT @ 3885: 0.069136189638929
+INFO - [G] LONG DT @ 3885: 0.064660051711147
+INFO - [G] LONG DT @ 3885: 0.061170021368983
+INFO - [G] LONG DT @ 3885: 0.0582597170951
+INFO - [G] LONG DT @ 3885: 0.056081493676085
+INFO - [G] LONG DT @ 3886: 0.054214174940918
+INFO - [G] LONG DT @ 3886: 0.052795579952687
+INFO - [G] LONG DT @ 3886: 0.0519968639622
+INFO - [G] LONG DT @ 3886: 0.051078631169785
+INFO - [G] LONG DT @ 3886: 0.050360904935813
+INFO - [G] LONG DT @ 3902: 0.054164669099624
+INFO - [G] LONG DT @ 3906: 0.090298202525831
+INFO - [G] LONG DT @ 3906: 0.077033962020631
+INFO - [G] LONG DT @ 3906: 0.070915989616488
+INFO - [G] LONG DT @ 3906: 0.059744151693173
+INFO - [G] LONG DT @ 3906: 0.050989141354608
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:45:05 :: DEBUG :: SMODS.https(66) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:46:06 :: DEBUG :: SMODS.https(67) :: Using https module backend
+INFO - [G] LONG DT @ 4005: 0.059836330505272
+INFO - [G] LONG DT @ 4005: 0.05063356440423
+INFO - [G] LONG DT @ 4013: 0.057745118593696
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:47:09 :: DEBUG :: SMODS.https(68) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:48:10 :: DEBUG :: SMODS.https(69) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:49:10 :: DEBUG :: SMODS.https(70) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:50:10 :: DEBUG :: SMODS.https(71) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:51:11 :: DEBUG :: SMODS.https(72) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:52:11 :: DEBUG :: SMODS.https(73) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:53:11 :: DEBUG :: SMODS.https(74) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:54:11 :: DEBUG :: SMODS.https(75) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:55:12 :: DEBUG :: SMODS.https(76) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:56:12 :: DEBUG :: SMODS.https(77) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:57:12 :: DEBUG :: SMODS.https(78) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:58:12 :: DEBUG :: SMODS.https(79) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 02:59:13 :: DEBUG :: SMODS.https(80) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:00:13 :: DEBUG :: SMODS.https(81) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:01:13 :: DEBUG :: SMODS.https(82) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:02:13 :: DEBUG :: SMODS.https(83) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:03:14 :: DEBUG :: SMODS.https(84) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:04:14 :: DEBUG :: SMODS.https(85) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:05:14 :: DEBUG :: SMODS.https(86) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:06:14 :: DEBUG :: SMODS.https(87) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:07:15 :: DEBUG :: SMODS.https(88) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:08:15 :: DEBUG :: SMODS.https(89) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:09:15 :: DEBUG :: SMODS.https(90) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:10:15 :: DEBUG :: SMODS.https(91) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:11:16 :: DEBUG :: SMODS.https(92) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:12:16 :: DEBUG :: SMODS.https(93) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:13:16 :: DEBUG :: SMODS.https(94) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:14:17 :: DEBUG :: SMODS.https(95) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:15:17 :: DEBUG :: SMODS.https(96) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:16:17 :: DEBUG :: SMODS.https(97) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:17:17 :: DEBUG :: SMODS.https(98) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:18:18 :: DEBUG :: SMODS.https(99) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:19:18 :: DEBUG :: SMODS.https(100) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:20:18 :: DEBUG :: SMODS.https(101) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:21:18 :: DEBUG :: SMODS.https(102) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:22:19 :: DEBUG :: SMODS.https(103) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:23:19 :: DEBUG :: SMODS.https(104) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:24:19 :: DEBUG :: SMODS.https(105) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:25:19 :: DEBUG :: SMODS.https(106) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:26:20 :: DEBUG :: SMODS.https(107) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:27:20 :: DEBUG :: SMODS.https(108) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:28:20 :: DEBUG :: SMODS.https(109) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:29:20 :: DEBUG :: SMODS.https(110) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:30:21 :: DEBUG :: SMODS.https(111) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:31:21 :: DEBUG :: SMODS.https(112) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:32:21 :: DEBUG :: SMODS.https(113) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:33:21 :: DEBUG :: SMODS.https(114) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:34:22 :: DEBUG :: SMODS.https(115) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:35:22 :: DEBUG :: SMODS.https(116) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:36:22 :: DEBUG :: SMODS.https(117) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:37:23 :: DEBUG :: SMODS.https(118) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:38:23 :: DEBUG :: SMODS.https(119) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:39:23 :: DEBUG :: SMODS.https(120) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:40:23 :: DEBUG :: SMODS.https(121) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:41:24 :: DEBUG :: SMODS.https(122) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:42:24 :: DEBUG :: SMODS.https(123) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:43:24 :: DEBUG :: SMODS.https(124) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:44:24 :: DEBUG :: SMODS.https(125) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:45:25 :: DEBUG :: SMODS.https(126) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:46:25 :: DEBUG :: SMODS.https(127) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:47:25 :: DEBUG :: SMODS.https(128) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:48:25 :: DEBUG :: SMODS.https(129) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:49:26 :: DEBUG :: SMODS.https(130) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:50:26 :: DEBUG :: SMODS.https(131) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:51:26 :: DEBUG :: SMODS.https(132) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:52:26 :: DEBUG :: SMODS.https(133) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:53:27 :: DEBUG :: SMODS.https(134) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:54:27 :: DEBUG :: SMODS.https(135) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:55:27 :: DEBUG :: SMODS.https(136) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:56:27 :: DEBUG :: SMODS.https(137) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:57:28 :: DEBUG :: SMODS.https(138) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:58:28 :: DEBUG :: SMODS.https(139) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 03:59:28 :: DEBUG :: SMODS.https(140) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:00:29 :: DEBUG :: SMODS.https(141) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:01:29 :: DEBUG :: SMODS.https(142) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:02:29 :: DEBUG :: SMODS.https(143) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:03:29 :: DEBUG :: SMODS.https(144) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:04:30 :: DEBUG :: SMODS.https(145) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:05:30 :: DEBUG :: SMODS.https(146) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:06:30 :: DEBUG :: SMODS.https(147) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:07:30 :: DEBUG :: SMODS.https(148) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:08:31 :: DEBUG :: SMODS.https(149) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:09:31 :: DEBUG :: SMODS.https(150) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:10:31 :: DEBUG :: SMODS.https(151) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:11:31 :: DEBUG :: SMODS.https(152) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:12:32 :: DEBUG :: SMODS.https(153) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:13:32 :: DEBUG :: SMODS.https(154) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:14:32 :: DEBUG :: SMODS.https(155) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:15:32 :: DEBUG :: SMODS.https(156) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:16:33 :: DEBUG :: SMODS.https(157) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:17:33 :: DEBUG :: SMODS.https(158) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:18:33 :: DEBUG :: SMODS.https(159) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:19:33 :: DEBUG :: SMODS.https(160) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:20:34 :: DEBUG :: SMODS.https(161) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:21:34 :: DEBUG :: SMODS.https(162) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:22:34 :: DEBUG :: SMODS.https(163) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:23:35 :: DEBUG :: SMODS.https(164) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:24:35 :: DEBUG :: SMODS.https(165) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:25:35 :: DEBUG :: SMODS.https(166) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:26:35 :: DEBUG :: SMODS.https(167) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:27:36 :: DEBUG :: SMODS.https(168) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:28:36 :: DEBUG :: SMODS.https(169) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:29:36 :: DEBUG :: SMODS.https(170) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:30:36 :: DEBUG :: SMODS.https(171) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:31:37 :: DEBUG :: SMODS.https(172) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:32:37 :: DEBUG :: SMODS.https(173) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:33:37 :: DEBUG :: SMODS.https(174) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:34:37 :: DEBUG :: SMODS.https(175) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:35:38 :: DEBUG :: SMODS.https(176) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:36:38 :: DEBUG :: SMODS.https(177) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:37:38 :: DEBUG :: SMODS.https(178) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:38:38 :: DEBUG :: SMODS.https(179) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:39:39 :: DEBUG :: SMODS.https(180) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:40:39 :: DEBUG :: SMODS.https(181) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:41:39 :: DEBUG :: SMODS.https(182) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:42:39 :: DEBUG :: SMODS.https(183) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:43:40 :: DEBUG :: SMODS.https(184) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:44:40 :: DEBUG :: SMODS.https(185) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:45:40 :: DEBUG :: SMODS.https(186) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:46:40 :: DEBUG :: SMODS.https(187) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-07-11 04:47:41 :: DEBUG :: SMODS.https(188) :: Using https module backend

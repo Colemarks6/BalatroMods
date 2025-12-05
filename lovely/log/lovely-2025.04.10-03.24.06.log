@@ -1,0 +1,1547 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods"
+WARN - [♥] Unknown key `patches.21.?.match_indent` found in patch file at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\Cryptid\\lovely\\code.toml", ignoring it
+WARN - [♥] Unknown key `patches.49.?.match_indent` found in patch file at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.52.?.match_indent` found in patch file at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\colem\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 37ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 17 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 7 patches to 'engine/controller.lua'
+INFO - [♥] Applied 15 patches to 'back.lua'
+INFO - [♥] Applied 18 patches to 'tag.lua'
+INFO - [♥] Applied 1 patch to 'engine/node.lua'
+INFO - [♥] Applied 3 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 3 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 58 patches to 'functions/misc_functions.lua'
+WARN - [♥] Pattern 'for i = 1, 2 do' on target 'game.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'create_shop_card_ui(card, \'Voucher\', G.shop_vouchers)' on target 'game.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'self.GAME.current_round.voucher = G.SETTINGS.tutorial_progress and G.SETTINGS.tutorial_progress.forced_voucher or SMODS.get_next_vouchers()' on target 'game.lua' for pattern patch from Cryptid\lovely\very_fair.toml resulted in no matches
+WARN - [♥] Pattern 'self.GAME.current_round.voucher = G.SETTINGS.tutorial_progress and G.SETTINGS.tutorial_progress.forced_voucher or get_next_voucher_key()' on target 'game.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Regex 'card\\:start_materialize\\(\\)\\n\\s+G\\.shop_vouchers\\:emplace\\(card\\)\\n\\s+end' on target 'game.lua' for regex patch from Cryptid\lovely\Voucher.toml resulted in no matches
+INFO - [♥] Applied 85 patches to 'game.lua'
+INFO - [♥] Applied 1 patch to 'globals.lua'
+INFO - [♥] Applied 6 patches to 'engine/ui.lua'
+WARN - [♥] Pattern 'G.GAME.shop.joker_max*1.02*G.CARD_W,' on target 'functions/UI_definitions.lua' for pattern patch from Cryptid\lovely\equilibrium.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 104 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'ease_to = G.GAME.chips + math.floor(hand_chips * mult) * (e and e.antiscore and -1 or 1),' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\blind.toml resulted in no matches
+WARN - [♥] Pattern 'if reps[j] ~= 1 then' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\misc.toml resulted in no matches
+WARN - [♥] Pattern 'for i=1, #G.jokers.cards + #G.consumeables.cards do' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\misc.toml resulted in no matches
+WARN - [♥] Pattern 'local effects = {[1] = {playing_card = G.hand.cards[i]:get_end_of_round_effect()}}' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = get_next_voucher_key()' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\sticker.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = get_next_voucher_key()' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if SMODS.has_enhancement(scoring_hand[i], \'m_glass\') and not scoring_hand[i].debuff and pseudorandom(\'glass\') < G.GAME.probabilities.normal/(scoring_hand[i].ability.name == \'Glass Card\' and scoring_hand[i].ability.extra or G.P_CENTERS.m_glass.config.extra) then' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+WARN - [♥] Regex '(?<indent>[\\t ]*)if destroyed then \\n' on target 'functions/state_events.lua' for regex patch from Cryptid\lovely\seal.toml resulted in no matches
+INFO - [♥] Applied 82 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = localize(\'$\')..config.dollars, scale = 1.2*scale, colour = G.C.WHITE, shadow = true, juice = true}}' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\code.toml resulted in no matches
+WARN - [♥] Pattern 'G.shop_jokers.T.w = G.GAME.shop.joker_max*1.01*G.CARD_W' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\equilibrium.toml resulted in no matches
+WARN - [♥] Pattern 'function generate_card_ui(_c, full_UI_table, specific_vars, card_type, badges, hide_desc, main_start, main_end)' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\lib_misc.toml resulted in no matches
+WARN - [♥] Pattern 'elseif v.boss.showdown and (G.GAME.round_resets.ante)%G.GAME.win_ante == 0 and G.GAME.round_resets.ante >= 2 then' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 176 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if ((G.GAME.dollars-G.GAME.bankrupt_at) - 10 >= 0) and' on target 'functions/button_callbacks.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 72 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'if G.GAME.blind and G.GAME.blind.in_blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Steamodded\lovely\calculate_card_added.toml resulted in no matches
+WARN - [♥] Pattern 'if not initial then G.GAME.blind:debuff_card(self) end' on target 'card.lua' for pattern patch from Cryptid\lovely\lib_misc.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'Campfire\' and G.GAME.blind.boss and not (G.GAME.blind.config and G.GAME.blind.config.bonus) and self.ability.x_mult > 1 then' on target 'card.lua' for pattern patch from Cryptid\lovely\misc.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name:find(\'Arcana\') then' on target 'card.lua' for pattern patch from Cryptid\lovely\misprint.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'The Hermit\' or self.ability.consumeable.hand_type or self.ability.name == \'Temperance\' or self.ability.name == \'Black Hole\' then' on target 'card.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.queue_negative_removal then' on target 'card.lua' for pattern patch from Cryptid\lovely\sticker.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = nil' on target 'card.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'elseif self.ability.name == \'Business Card\' then loc_vars = {\'\'..(G.GAME and G.GAME.probabilities.normal or 1), self.ability.extra}' on target 'card.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+WARN - [♥] Pattern 'pseudorandom(\'business\') < G.GAME.probabilities.normal/self.ability.extra then' on target 'card.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+INFO - [♥] Applied 247 patches to 'card.lua'
+INFO - [♥] Applied 19 patches to 'cardarea.lua'
+INFO - [♥] Applied 40 patches to 'blind.lua'
+INFO - [♥] Applied 2 patches to 'card_character.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 4 patches to '=[SMODS _ "src/overrides.lua"]'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-04-10 03:24:11 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [G] 2025-04-10 03:24:11 :: INFO  :: SMODS :: Steamodded v1.0.0~BETA-0406a
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 4 patches to '=[SMODS _ "src/card_draw.lua"]'
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-04-10 03:24:13 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-04-10 03:24:13 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] [CRYPTID] Loading library file ascended.lua
+INFO - [G] [CRYPTID] Loading library file calculate.lua
+INFO - [G] [CRYPTID] Loading library file content.lua
+INFO - [G] [CRYPTID] Loading library file cross-mod.lua
+INFO - [G] [CRYPTID] Loading library file d20.lua
+INFO - [G] [CRYPTID] Loading library file event.lua
+INFO - [G] [CRYPTID] Loading library file gameset.lua
+INFO - [G] [CRYPTID] Loading library file https.lua
+INFO - [G] 2025-04-10 03:24:13 :: DEBUG :: SMODS.https :: Using https module backend
+INFO - [G] [CRYPTID] Loading library file misc.lua
+INFO - [G] [CRYPTID] Loading library file misprintize.lua
+INFO - [G] [CRYPTID] Loading library file modifiers.lua
+INFO - [G] 2025-04-10 03:24:13 :: WARN  :: Sticker :: Detected duplicate register call on object perishable
+INFO - [G] 2025-04-10 03:24:13 :: WARN  :: Sticker :: Detected duplicate register call on object pinned
+INFO - [G] 2025-04-10 03:24:13 :: WARN  :: Sticker :: Detected duplicate register call on object eternal
+INFO - [G] 2025-04-10 03:24:13 :: WARN  :: Sticker :: Detected duplicate register call on object rental
+INFO - [G] [CRYPTID] Loading library file notifications.lua
+INFO - [G] [CRYPTID] Loading library file overrides.lua
+INFO - [G] [CRYPTID] Loading library file ui.lua
+INFO - [G] [CRYPTID] Loading file achievement.lua
+INFO - [G] [CRYPTID] Loading file blind.lua
+INFO - [G] [CRYPTID] Loading file challenge.lua
+INFO - [G] [CRYPTID] Loading file code.lua
+INFO - [G] [CRYPTID] Loading file deck.lua
+INFO - [G] [CRYPTID] Loading file enhanced.lua
+INFO - [G] [CRYPTID] Loading file epic.lua
+INFO - [G] [CRYPTID] Loading file exotic.lua
+INFO - [G] [CRYPTID] Loading file joker_display.lua
+INFO - [G] [CRYPTID] Loading file m.lua
+INFO - [G] [CRYPTID] Loading file misc.lua
+INFO - [G] [CRYPTID] Loading file misc_joker.lua
+INFO - [G] [CRYPTID] Loading file planet.lua
+INFO - [G] [CRYPTID] Loading file sleeve.lua
+INFO - [G] [CRYPTID] Loading file spectral.lua
+INFO - [G] [CRYPTID] Loading file spooky.lua
+INFO - [G] [CRYPTID] Loading file stake.lua
+INFO - [G] [CRYPTID] Loading file tag.lua
+INFO - [G] [CRYPTID] Loading file test.lua
+INFO - [G] [CRYPTID] Loading file voucher.lua
+INFO - [G] 2025-04-10 03:24:13 :: WARN  :: Atlas :: Object cry_effarcire has the same key as an existing object, not registering.
+INFO - [G] 2025-04-10 03:24:13 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0000] Injected Language in 0.001 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 0.686 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0031] Injected Atlas in 695.137 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0030] Injected Sound in 18.523 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0032] Injected Stake in 0.448 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0008] Injected Rarity in 0.022 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0010] Injected ObjectType in 0.119 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0389] Injected Center in 1.612 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0009] Injected Undiscovered Sprite in 0.016 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0029] Injected Blind in 0.038 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0006] Injected Seal in 0.159 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0004] Injected Suit in 0.048 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0013] Injected Rank in 0.054 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0028] Injected DeckSkin in 0.134 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0016] Injected PokerHand in 0.084 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0031] Injected Challenge in 0.029 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0028] Injected Tag in 0.070 ms
+INFO - [G] 2025-04-10 03:24:13 :: INFO  :: TIMER :: [0010] Injected Sticker in 0.090 ms
+INFO - [G] 2025-04-10 03:24:14 :: INFO  :: TIMER :: [0009] Injected Shader in 63.152 ms
+INFO - [G] 2025-04-10 03:24:14 :: INFO  :: TIMER :: [0002] Injected Keybind in 0.008 ms
+INFO - [G] 2025-04-10 03:24:14 :: INFO  :: TIMER :: [0021] Injected Achievement in 0.030 ms
+INFO - [G] 2025-04-10 03:24:14 :: INFO  :: TIMER :: [0002] Injected nil in 0.007 ms
+INFO - [G] 2025-04-10 03:24:14 :: INFO  :: TIMER :: [0023] Injected Draw Step in 0.109 ms
+INFO - [G] 2025-04-10 03:24:14 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 4.251 ms
+INFO - [G] 2025-04-10 03:24:14 :: INFO  :: TIMER :: [0010] Injected Other in 0.013 ms
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:24:20 :: DEBUG :: SMODS.https(1) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:25:21 :: DEBUG :: SMODS.https(2) :: Using https module backend
+INFO - [G] LONG DT @ 95: 0.050312679795522
+INFO - [G] LONG DT @ 105: 0.050892035256689
+INFO - [G] LONG DT @ 108: 0.051619464689701
+INFO - [G] LONG DT @ 137: 0.055861174748811
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:26:21 :: DEBUG :: SMODS.https(3) :: Using https module backend
+INFO - [G] LONG DT @ 142: 0.056826277835391
+INFO - [G] LONG DT @ 143: 0.057999392492037
+INFO - [G] LONG DT @ 144: 0.057147088944767
+INFO - [G] LONG DT @ 148: 0.064859021280962
+INFO - [G] LONG DT @ 148: 0.054051517024768
+INFO - [G] LONG DT @ 149: 0.050939620458675
+INFO - [G] LONG DT @ 152: 0.062182973203069
+INFO - [G] LONG DT @ 152: 0.052182198562455
+INFO - [G] LONG DT @ 155: 0.064359523343935
+INFO - [G] LONG DT @ 155: 0.054014778675148
+INFO - [G] LONG DT @ 155: 0.050286613654619
+INFO - [G] LONG DT @ 164: 0.051695973230618
+INFO - [G] LONG DT @ 182: 0.06524418967209
+INFO - [G] LONG DT @ 182: 0.054703291737676
+INFO - [G] LONG DT @ 183: 0.052354341674079
+INFO - [G] LONG DT @ 185: 0.068081361150783
+INFO - [G] LONG DT @ 185: 0.056973708920624
+INFO - [G] LONG DT @ 185: 0.055939580747114
+INFO - [G] LONG DT @ 186: 0.067163049743458
+INFO - [G] LONG DT @ 186: 0.056676879794766
+INFO - [G] LONG DT @ 186: 0.053156036981721
+INFO - [G] LONG DT @ 188: 0.071912879132968
+INFO - [G] LONG DT @ 189: 0.062122843306373
+INFO - [G] LONG DT @ 189: 0.0521470746451
+INFO - [G] LONG DT @ 189: 0.059182535054633
+INFO - [G] LONG DT @ 189: 0.050215308043705
+INFO - [G] LONG DT @ 192: 0.07491860098518
+INFO - [G] LONG DT @ 192: 0.064446800788143
+INFO - [G] LONG DT @ 192: 0.054101400630517
+INFO - [G] LONG DT @ 192: 0.063334111778261
+INFO - [G] LONG DT @ 192: 0.053248469422607
+INFO - [G] LONG DT @ 193: 0.05300448677664
+INFO - [G] LONG DT @ 194: 0.055606464547113
+INFO - [G] LONG DT @ 194: 0.079750311637686
+INFO - [G] LONG DT @ 194: 0.066713389310153
+INFO - [G] LONG DT @ 194: 0.05643389144812
+INFO - [G] LONG DT @ 195: 0.051271002567131
+INFO - [G] LONG DT @ 196: 0.051758315196961
+INFO - [G] LONG DT @ 197: 0.051540548879577
+INFO - [G] LONG DT @ 199: 0.051259982355704
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:27:21 :: DEBUG :: SMODS.https(4) :: Using https module backend
+INFO - [G] LONG DT @ 200: 0.050509963665559
+INFO - [G] LONG DT @ 204: 0.053477232938577
+INFO - [G] LONG DT @ 204: 0.051869686880191
+INFO - [G] LONG DT @ 205: 0.051621901224614
+INFO - [G] LONG DT @ 206: 0.050182205095144
+INFO - [G] LONG DT @ 206: 0.05353562538856
+INFO - [G] LONG DT @ 207: 0.052287034432504
+INFO - [G] LONG DT @ 207: 0.080062167546005
+INFO - [G] LONG DT @ 207: 0.0667366540368
+INFO - [G] LONG DT @ 207: 0.05607140322944
+INFO - [G] LONG DT @ 208: 0.06834549844278
+INFO - [G] LONG DT @ 208: 0.058395058754223
+INFO - [G] LONG DT @ 209: 0.052280592679193
+INFO - [G] LONG DT @ 211: 0.050685079075056
+INFO - [G] LONG DT @ 211: 0.051898498506805
+INFO - [G] LONG DT @ 212: 0.052772960186236
+INFO - [G] LONG DT @ 212: 0.055510910727507
+INFO - [G] LONG DT @ 213: 0.053377038950712
+INFO - [G] LONG DT @ 213: 0.058805746762544
+INFO - [G] LONG DT @ 213: 0.077171857410036
+INFO - [G] LONG DT @ 213: 0.06454630592803
+INFO - [G] LONG DT @ 213: 0.054406264742423
+INFO - [G] LONG DT @ 214: 0.055118472630184
+INFO - [G] LONG DT @ 214: 0.085200278104151
+INFO - [G] LONG DT @ 214: 0.07298694248332
+INFO - [G] LONG DT @ 214: 0.061239713986653
+INFO - [G] LONG DT @ 214: 0.051612191189322
+INFO - [G] LONG DT @ 214: 0.072476755488933
+INFO - [G] LONG DT @ 214: 0.062843064391147
+INFO - [G] LONG DT @ 214: 0.053448591512916
+INFO - [G] LONG DT @ 215: 0.053228358638184
+INFO - [G] LONG DT @ 215: 0.084517706910547
+INFO - [G] LONG DT @ 215: 0.07032348552844
+INFO - [G] LONG DT @ 215: 0.059038048422752
+INFO - [G] LONG DT @ 215: 0.072311724473957
+INFO - [G] LONG DT @ 215: 0.062485199579164
+INFO - [G] LONG DT @ 215: 0.052718459663333
+INFO - [G] LONG DT @ 216: 0.055309709734156
+INFO - [G] LONG DT @ 217: 0.05486129799466
+INFO - [G] LONG DT @ 217: 0.086672178395728
+INFO - [G] LONG DT @ 217: 0.074009442716583
+INFO - [G] LONG DT @ 218: 0.06206143417327
+INFO - [G] LONG DT @ 218: 0.052273647338612
+INFO - [G] LONG DT @ 218: 0.073584304237373
+INFO - [G] LONG DT @ 218: 0.063719443389898
+INFO - [G] LONG DT @ 218: 0.053886034711915
+INFO - [G] LONG DT @ 219: 0.056556916267009
+INFO - [G] LONG DT @ 219: 0.1
+INFO - [G] LONG DT @ 219: 0.08298512
+INFO - [G] LONG DT @ 219: 0.069029775999999
+INFO - [G] LONG DT @ 219: 0.057974500800002
+INFO - [G] LONG DT @ 219: 0.0775775092096
+INFO - [G] LONG DT @ 219: 0.06531482736768
+INFO - [G] LONG DT @ 219: 0.054861141894146
+INFO - [G] LONG DT @ 220: 0.056708139081684
+INFO - [G] LONG DT @ 220: 0.061076611577976
+INFO - [G] LONG DT @ 220: 0.05203330926238
+INFO - [G] LONG DT @ 221: 0.058182981340925
+INFO - [G] LONG DT @ 221: 0.090288645072739
+INFO - [G] LONG DT @ 221: 0.074949116058189
+INFO - [G] LONG DT @ 221: 0.062625332846554
+INFO - [G] LONG DT @ 221: 0.052788566277243
+INFO - [G] LONG DT @ 222: 0.076070513933948
+INFO - [G] LONG DT @ 222: 0.064153131147161
+INFO - [G] LONG DT @ 222: 0.054642104917726
+INFO - [G] LONG DT @ 224: 0.059406692554578
+INFO - [G] LONG DT @ 224: 0.051024934043661
+INFO - [G] LONG DT @ 224: 0.058180788855808
+INFO - [G] LONG DT @ 225: 0.064173189630345
+INFO - [G] LONG DT @ 225: 0.054605751704275
+INFO - [G] LONG DT @ 226: 0.058364808926665
+INFO - [G] LONG DT @ 226: 0.050419527141329
+INFO - [G] LONG DT @ 227: 0.059084515772706
+INFO - [G] LONG DT @ 227: 0.091910852618164
+INFO - [G] LONG DT @ 227: 0.076348022094533
+INFO - [G] LONG DT @ 227: 0.064005397675622
+INFO - [G] LONG DT @ 227: 0.054153938140501
+INFO - [G] LONG DT @ 227: 0.077317205127933
+INFO - [G] LONG DT @ 227: 0.096189664102348
+INFO - [G] LONG DT @ 227: 0.080046031281876
+INFO - [G] LONG DT @ 227: 0.066841305025504
+INFO - [G] LONG DT @ 227: 0.056595404020401
+INFO - [G] LONG DT @ 228: 0.059184779578941
+INFO - [G] LONG DT @ 228: 0.050265023663154
+INFO - [G] LONG DT @ 228: 0.064756769683163
+INFO - [G] LONG DT @ 228: 0.054729795746533
+INFO - [G] LONG DT @ 230: 0.059078354487013
+INFO - [G] LONG DT @ 230: 0.050281463589612
+INFO - [G] LONG DT @ 236: 0.059195627343033
+INFO - [G] LONG DT @ 236: 0.050292181874422
+INFO - [G] LONG DT @ 237: 0.058381013637866
+INFO - [G] LONG DT @ 238: 0.058360969549255
+INFO - [G] LONG DT @ 238: 0.050147095639403
+INFO - [G] LONG DT @ 239: 0.057112789513105
+INFO - [G] LONG DT @ 244: 0.056081627830782
+INFO - [G] LONG DT @ 256: 0.084326352983292
+INFO - [G] LONG DT @ 256: 0.07656738238663
+INFO - [G] LONG DT @ 256: 0.070446785909305
+INFO - [G] LONG DT @ 256: 0.065488388727443
+INFO - [G] LONG DT @ 256: 0.061660050981957
+INFO - [G] LONG DT @ 256: 0.058519680785566
+INFO - [G] LONG DT @ 256: 0.056081624628451
+INFO - [G] LONG DT @ 256: 0.053972179702762
+INFO - [G] LONG DT @ 256: 0.052484543762206
+INFO - [G] LONG DT @ 257: 0.051356555009767
+INFO - [G] LONG DT @ 257: 0.050271524007814
+INFO - [G] LONG DT @ 258: 0.056810129431582
+INFO - [G] LONG DT @ 259: 0.1
+INFO - [G] LONG DT @ 259: 0.083410560000003
+INFO - [G] LONG DT @ 259: 0.069543688000004
+INFO - [G] LONG DT @ 259: 0.058850650400001
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:28:22 :: DEBUG :: SMODS.https(5) :: Using https module backend
+INFO - [G] LONG DT @ 270: 0.1
+INFO - [G] LONG DT @ 270: 0.093917619999995
+INFO - [G] LONG DT @ 270: 0.076389335999997
+INFO - [G] LONG DT @ 270: 0.062358208799996
+INFO - [G] LONG DT @ 270: 0.051654747039996
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:29:22 :: DEBUG :: SMODS.https(6) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:30:26 :: DEBUG :: SMODS.https(7) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:31:26 :: DEBUG :: SMODS.https(8) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:32:27 :: DEBUG :: SMODS.https(9) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:33:27 :: DEBUG :: SMODS.https(10) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:34:27 :: DEBUG :: SMODS.https(11) :: Using https module backend
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:35:28 :: DEBUG :: SMODS.https(12) :: Using https module backend
+INFO - [G] LONG DT @ 726: 0.084044049818422
+INFO - [G] LONG DT @ 726: 0.072346719854742
+INFO - [G] LONG DT @ 726: 0.062565835883782
+INFO - [G] LONG DT @ 726: 0.054648088707036
+INFO - [G] LONG DT @ 736: 0.088689500224983
+INFO - [G] LONG DT @ 736: 0.075198640179982
+INFO - [G] LONG DT @ 736: 0.063954152143985
+INFO - [G] LONG DT @ 736: 0.054920601715179
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:36:30 :: DEBUG :: SMODS.https(13) :: Using https module backend
+INFO - [G] LONG DT @ 778: 0.080407806425705
+INFO - [G] LONG DT @ 778: 0.066307865140556
+INFO - [G] LONG DT @ 778: 0.055172192112455
+INFO - [G] LONG DT @ 786: 0.055932261810542
+INFO - [G] LONG DT @ 800: 0.053316548778387
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:37:30 :: DEBUG :: SMODS.https(14) :: Using https module backend
+INFO - [G] LONG DT @ 840: 0.1
+INFO - [G] LONG DT @ 840: 0.099850559999986
+INFO - [G] LONG DT @ 840: 0.082448928000003
+INFO - [G] LONG DT @ 840: 0.068535582399986
+INFO - [G] LONG DT @ 840: 0.05753350591999
+INFO - [G] LONG DT @ 850: 0.1
+INFO - [G] LONG DT @ 850: 0.082204159999997
+INFO - [G] LONG DT @ 850: 0.068202068
+INFO - [G] LONG DT @ 850: 0.056737534400004
+INFO - [G] LONG DT @ 860: 0.097450784203506
+INFO - [G] LONG DT @ 860: 0.087206287362793
+INFO - [G] LONG DT @ 860: 0.078788429890235
+INFO - [G] LONG DT @ 860: 0.071977623912196
+INFO - [G] LONG DT @ 860: 0.066777819129759
+INFO - [G] LONG DT @ 860: 0.062564255303804
+INFO - [G] LONG DT @ 860: 0.059091024243042
+INFO - [G] LONG DT @ 860: 0.056550779394442
+INFO - [G] LONG DT @ 861: 0.054231723515534
+INFO - [G] LONG DT @ 861: 0.052379898812437
+INFO - [G] LONG DT @ 861: 0.050993079049958
+INFO - [G] LONG DT @ 863: 0.07879895012033
+INFO - [G] LONG DT @ 863: 0.071968640096248
+INFO - [G] LONG DT @ 863: 0.066641932076996
+INFO - [G] LONG DT @ 863: 0.062127625661599
+INFO - [G] LONG DT @ 863: 0.058660440529283
+INFO - [G] LONG DT @ 863: 0.055848432423433
+INFO - [G] LONG DT @ 863: 0.053593645938737
+INFO - [G] LONG DT @ 863: 0.051960976750994
+INFO - [G] LONG DT @ 863: 0.050526901400806
+INFO - [G] LONG DT @ 866: 0.0798219707997
+INFO - [G] LONG DT @ 866: 0.07298209663976
+INFO - [G] LONG DT @ 866: 0.067390697311803
+INFO - [G] LONG DT @ 866: 0.06285463784944
+INFO - [G] LONG DT @ 866: 0.05946131027955
+INFO - [G] LONG DT @ 866: 0.056587328223649
+INFO - [G] LONG DT @ 866: 0.054203942578914
+INFO - [G] LONG DT @ 866: 0.052370574063143
+INFO - [G] LONG DT @ 866: 0.050897319250506
+INFO - [G] LONG DT @ 867: 0.050053855400412
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:38:30 :: DEBUG :: SMODS.https(15) :: Using https module backend
+INFO - [G] LONG DT @ 869: 0.1
+INFO - [G] LONG DT @ 870: 0.083109879999988
+INFO - [G] LONG DT @ 870: 0.069669784000002
+INFO - [G] LONG DT @ 870: 0.05947782719999
+INFO - [G] LONG DT @ 870: 0.05065522176
+INFO - [G] LONG DT @ 878: 0.1
+INFO - [G] LONG DT @ 878: 0.082634839999996
+INFO - [G] LONG DT @ 878: 0.068535412000005
+INFO - [G] LONG DT @ 878: 0.057225309600007
+INFO - [G] LONG DT @ 913: 0.1
+INFO - [G] LONG DT @ 913: 0.083160959999991
+INFO - [G] LONG DT @ 913: 0.069222367999991
+INFO - [G] LONG DT @ 913: 0.057953454400006
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:39:32 :: DEBUG :: SMODS.https(16) :: Using https module backend
+INFO - [G] LONG DT @ 938: 0.084823096237702
+INFO - [G] LONG DT @ 938: 0.07802717699017
+INFO - [G] LONG DT @ 938: 0.072170041592137
+INFO - [G] LONG DT @ 938: 0.067873013273703
+INFO - [G] LONG DT @ 938: 0.064413770618971
+INFO - [G] LONG DT @ 938: 0.061569696495179
+INFO - [G] LONG DT @ 938: 0.059173797196146
+INFO - [G] LONG DT @ 938: 0.0581515777569
+INFO - [G] LONG DT @ 938: 0.057467022205524
+INFO - [G] LONG DT @ 939: 0.055842257764433
+INFO - [G] LONG DT @ 939: 0.054364086211541
+INFO - [G] LONG DT @ 939: 0.052875508969219
+INFO - [G] LONG DT @ 939: 0.051562587175394
+INFO - [G] LONG DT @ 939: 0.051050149740306
+INFO - [G] LONG DT @ 939: 0.050441819792252
+INFO - [G] LONG DT @ 941: 0.079817217217011
+INFO - [G] LONG DT @ 941: 0.073233673773608
+INFO - [G] LONG DT @ 941: 0.067888559018883
+INFO - [G] LONG DT @ 941: 0.063731107215108
+INFO - [G] LONG DT @ 941: 0.0602374857721
+INFO - [G] LONG DT @ 941: 0.057297828617681
+INFO - [G] LONG DT @ 941: 0.055130582894131
+INFO - [G] LONG DT @ 941: 0.05327648631531
+INFO - [G] LONG DT @ 941: 0.051781569052251
+INFO - [G] LONG DT @ 942: 0.050512555241788
+INFO - [G] LONG DT @ 944: 0.080258410115632
+INFO - [G] LONG DT @ 944: 0.073455988092507
+INFO - [G] LONG DT @ 944: 0.067980150474013
+INFO - [G] LONG DT @ 944: 0.063531620379205
+INFO - [G] LONG DT @ 944: 0.059990476303378
+INFO - [G] LONG DT @ 944: 0.0571845410427
+INFO - [G] LONG DT @ 944: 0.054984112834164
+INFO - [G] LONG DT @ 944: 0.053212950267324
+INFO - [G] LONG DT @ 944: 0.051898780213856
+INFO - [G] LONG DT @ 944: 0.05078524417108
+INFO - [G] LONG DT @ 944: 0.05003007533686
+INFO - [G] LONG DT @ 947: 0.1
+INFO - [G] LONG DT @ 947: 0.083622200000018
+INFO - [G] LONG DT @ 948: 0.070332240000002
+INFO - [G] LONG DT @ 948: 0.060193432000007
+INFO - [G] LONG DT @ 948: 0.051491825600012
+INFO - [G] LONG DT @ 956: 0.1
+INFO - [G] LONG DT @ 956: 0.082699639999992
+INFO - [G] LONG DT @ 957: 0.068983331999997
+INFO - [G] LONG DT @ 957: 0.0581043256
+INFO - [G] LONG DT @ 968: 0.1
+INFO - [G] LONG DT @ 968: 0.085696899999998
+INFO - [G] LONG DT @ 968: 0.1
+INFO - [G] LONG DT @ 968: 0.1
+INFO - [G] LONG DT @ 968: 0.082693539999996
+INFO - [G] LONG DT @ 969: 0.069157751999991
+INFO - [G] LONG DT @ 969: 0.058213381600009
+INFO - [G] LONG DT @ 978: 0.086926469720082
+INFO - [G] LONG DT @ 979: 0.079269775776059
+INFO - [G] LONG DT @ 979: 0.073228580620847
+INFO - [G] LONG DT @ 979: 0.068259204496688
+INFO - [G] LONG DT @ 979: 0.064224303597351
+INFO - [G] LONG DT @ 979: 0.060830322877889
+INFO - [G] LONG DT @ 979: 0.058118138302312
+INFO - [G] LONG DT @ 979: 0.056225470641829
+INFO - [G] LONG DT @ 979: 0.054559796513463
+INFO - [G] LONG DT @ 979: 0.053366037210791
+INFO - [G] LONG DT @ 979: 0.052548549768629
+INFO - [G] LONG DT @ 979: 0.0514898198149
+INFO - [G] LONG DT @ 979: 0.050799415851915
+INFO - [G] LONG DT @ 979: 0.050269152681541
+INFO - [G] LONG DT @ 981: 0.082943839250868
+INFO - [G] LONG DT @ 982: 0.075945251400704
+INFO - [G] LONG DT @ 982: 0.070324141120551
+INFO - [G] LONG DT @ 982: 0.065781332896449
+INFO - [G] LONG DT @ 982: 0.062156766317162
+INFO - [G] LONG DT @ 982: 0.059336613053724
+INFO - [G] LONG DT @ 982: 0.057136630442989
+INFO - [G] LONG DT @ 982: 0.055511664354395
+INFO - [G] LONG DT @ 982: 0.054033991483502
+INFO - [G] LONG DT @ 982: 0.052659253186819
+INFO - [G] LONG DT @ 982: 0.051677702549433
+INFO - [G] LONG DT @ 982: 0.050962982039556
+INFO - [G] LONG DT @ 982: 0.05029654563164
+INFO - [G] LONG DT @ 984: 0.082365721673919
+INFO - [G] LONG DT @ 984: 0.075480937339133
+INFO - [G] LONG DT @ 985: 0.069841129871312
+INFO - [G] LONG DT @ 985: 0.06539710389706
+INFO - [G] LONG DT @ 985: 0.061886703117629
+INFO - [G] LONG DT @ 985: 0.059082382494119
+INFO - [G] LONG DT @ 985: 0.056863205995291
+INFO - [G] LONG DT @ 985: 0.055008664796224
+INFO - [G] LONG DT @ 985: 0.053413191836994
+INFO - [G] LONG DT @ 985: 0.05216155346959
+INFO - [G] LONG DT @ 985: 0.051176862775664
+INFO - [G] LONG DT @ 985: 0.050457270220546
+INFO - [G] LONG DT @ 989: 0.1
+INFO - [G] LONG DT @ 989: 0.086707979999987
+INFO - [G] LONG DT @ 989: 0.076431244000004
+INFO - [G] LONG DT @ 989: 0.068383955199998
+INFO - [G] LONG DT @ 989: 0.061588044159993
+INFO - [G] LONG DT @ 989: 0.056681655327989
+INFO - [G] LONG DT @ 989: 0.052180704262398
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:40:36 :: DEBUG :: SMODS.https(17) :: Using https module backend
+INFO - [G] LONG DT @ 997: 0.1
+INFO - [G] LONG DT @ 997: 0.1
+INFO - [G] LONG DT @ 997: 0.083004119999991
+INFO - [G] LONG DT @ 997: 0.069213715999985
+INFO - [G] LONG DT @ 997: 0.058302392799992
+INFO - [G] LONG DT @ 998: 0.1
+INFO - [G] LONG DT @ 998: 0.085973280000012
+INFO - [G] LONG DT @ 998: 0.075037923999997
+INFO - [G] LONG DT @ 998: 0.066187059200011
+INFO - [G] LONG DT @ 998: 0.059089707360016
+INFO - [G] LONG DT @ 998: 0.053500645887993
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:41:37 :: DEBUG :: SMODS.https(18) :: Using https module backend
+INFO - [G] LONG DT @ 1088: 0.05876554125472
+INFO - [G] LONG DT @ 1088: 0.050885493003754
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:42:39 :: DEBUG :: SMODS.https(19) :: Using https module backend
+INFO - [G] LONG DT @ 1123: 0.093785131580008
+INFO - [G] LONG DT @ 1123: 0.07957370526399
+INFO - [G] LONG DT @ 1124: 0.068247064211193
+INFO - [G] LONG DT @ 1124: 0.059336691368958
+INFO - [G] LONG DT @ 1124: 0.052242973095181
+INFO - [G] LONG DT @ 1133: 0.1
+INFO - [G] LONG DT @ 1133: 0.1
+INFO - [G] LONG DT @ 1133: 0.083787539999985
+INFO - [G] LONG DT @ 1133: 0.070607731999993
+INFO - [G] LONG DT @ 1133: 0.060149225599987
+INFO - [G] LONG DT @ 1133: 0.052134400479986
+INFO - [G] LONG DT @ 1137: 0.052529741866431
+INFO - [G] LONG DT @ 1137: 0.053871073493128
+INFO - [G] LONG DT @ 1137: 0.054390378794529
+INFO - [G] LONG DT @ 1137: 0.054650163035631
+INFO - [G] LONG DT @ 1138: 0.054896350428475
+INFO - [G] LONG DT @ 1138: 0.054966200342787
+INFO - [G] LONG DT @ 1138: 0.055649780274232
+INFO - [G] LONG DT @ 1138: 0.055424264219399
+INFO - [G] LONG DT @ 1138: 0.054641211375498
+INFO - [G] LONG DT @ 1138: 0.054046489100393
+INFO - [G] LONG DT @ 1138: 0.053606171280336
+INFO - [G] LONG DT @ 1138: 0.053118877024258
+INFO - [G] LONG DT @ 1138: 0.052898241619423
+INFO - [G] LONG DT @ 1138: 0.052955993295534
+INFO - [G] LONG DT @ 1138: 0.052898834636421
+INFO - [G] LONG DT @ 1138: 0.052653367709159
+INFO - [G] LONG DT @ 1138: 0.05329511416733
+INFO - [G] LONG DT @ 1138: 0.067079891333836
+INFO - [G] LONG DT @ 1138: 0.064073473067085
+INFO - [G] LONG DT @ 1138: 0.061682498453639
+INFO - [G] LONG DT @ 1138: 0.059747698762923
+INFO - [G] LONG DT @ 1138: 0.058148059010367
+INFO - [G] LONG DT @ 1139: 0.05680204720825
+INFO - [G] LONG DT @ 1139: 0.055707117766644
+INFO - [G] LONG DT @ 1139: 0.054879594213298
+INFO - [G] LONG DT @ 1139: 0.054196375370629
+INFO - [G] LONG DT @ 1139: 0.053659000296517
+INFO - [G] LONG DT @ 1139: 0.053278280237223
+INFO - [G] LONG DT @ 1139: 0.05291422418976
+INFO - [G] LONG DT @ 1139: 0.052661879351817
+INFO - [G] LONG DT @ 1139: 0.052703963481452
+INFO - [G] LONG DT @ 1139: 0.052515710785147
+INFO - [G] LONG DT @ 1139: 0.05232386862813
+INFO - [G] LONG DT @ 1139: 0.052219674902501
+INFO - [G] LONG DT @ 1139: 0.052155899921977
+INFO - [G] LONG DT @ 1139: 0.051924719937614
+INFO - [G] LONG DT @ 1139: 0.051940615950102
+INFO - [G] LONG DT @ 1139: 0.052107972760075
+INFO - [G] LONG DT @ 1139: 0.052139878208054
+INFO - [G] LONG DT @ 1139: 0.05228904256643
+INFO - [G] LONG DT @ 1139: 0.052407954053161
+INFO - [G] LONG DT @ 1140: 0.052321223242526
+INFO - [G] LONG DT @ 1140: 0.052137378594031
+INFO - [G] LONG DT @ 1140: 0.052070942875223
+INFO - [G] LONG DT @ 1140: 0.052004154300179
+INFO - [G] LONG DT @ 1140: 0.05201548344013
+INFO - [G] LONG DT @ 1140: 0.052010826752076
+INFO - [G] LONG DT @ 1140: 0.052103321401701
+INFO - [G] LONG DT @ 1140: 0.05211373712135
+INFO - [G] LONG DT @ 1140: 0.052193769697059
+INFO - [G] LONG DT @ 1140: 0.052294375757677
+INFO - [G] LONG DT @ 1140: 0.052278200606118
+INFO - [G] LONG DT @ 1140: 0.052214380484889
+INFO - [G] LONG DT @ 1140: 0.052229204387918
+INFO - [G] LONG DT @ 1140: 0.052235083510326
+INFO - [G] LONG DT @ 1140: 0.052288006808261
+INFO - [G] LONG DT @ 1140: 0.052474185446618
+INFO - [G] LONG DT @ 1140: 0.052378428357319
+INFO - [G] LONG DT @ 1140: 0.05241712268585
+INFO - [G] LONG DT @ 1140: 0.052955978148678
+INFO - [G] LONG DT @ 1141: 0.052746582518947
+INFO - [G] LONG DT @ 1141: 0.052573686015123
+INFO - [G] LONG DT @ 1141: 0.052444728812123
+INFO - [G] LONG DT @ 1141: 0.0523782230497
+INFO - [G] LONG DT @ 1141: 0.052454198439739
+INFO - [G] LONG DT @ 1141: 0.052403658751818
+INFO - [G] LONG DT @ 1141: 0.052347627001431
+INFO - [G] LONG DT @ 1141: 0.052359541601157
+INFO - [G] LONG DT @ 1141: 0.052452653280938
+INFO - [G] LONG DT @ 1141: 0.052457402624737
+INFO - [G] LONG DT @ 1141: 0.052317922099801
+INFO - [G] LONG DT @ 1141: 0.052409677679815
+INFO - [G] LONG DT @ 1141: 0.052303722143878
+INFO - [G] LONG DT @ 1141: 0.052228417715084
+INFO - [G] LONG DT @ 1141: 0.052202974172052
+INFO - [G] LONG DT @ 1141: 0.052136479337677
+INFO - [G] LONG DT @ 1141: 0.05213252347013
+INFO - [G] LONG DT @ 1141: 0.051950218776092
+INFO - [G] LONG DT @ 1141: 0.052115595020865
+INFO - [G] LONG DT @ 1142: 0.052087756016704
+INFO - [G] LONG DT @ 1142: 0.05212220481335
+INFO - [G] LONG DT @ 1142: 0.052096463850676
+INFO - [G] LONG DT @ 1142: 0.052016771080584
+INFO - [G] LONG DT @ 1142: 0.052105516864432
+INFO - [G] LONG DT @ 1142: 0.052078273491567
+INFO - [G] LONG DT @ 1142: 0.052245218793252
+INFO - [G] LONG DT @ 1142: 0.052078195034578
+INFO - [G] LONG DT @ 1142: 0.052115456027681
+INFO - [G] LONG DT @ 1142: 0.052205084822142
+INFO - [G] LONG DT @ 1142: 0.05216690785772
+INFO - [G] LONG DT @ 1142: 0.052187906286186
+INFO - [G] LONG DT @ 1142: 0.052186665028927
+INFO - [G] LONG DT @ 1142: 0.052169352023134
+INFO - [G] LONG DT @ 1142: 0.052460701618502
+INFO - [G] LONG DT @ 1142: 0.052622761294801
+INFO - [G] LONG DT @ 1142: 0.052504769035842
+INFO - [G] LONG DT @ 1142: 0.052765975228686
+INFO - [G] LONG DT @ 1142: 0.091095480182962
+INFO - [G] LONG DT @ 1143: 0.083449084146381
+INFO - [G] LONG DT @ 1143: 0.077118247317106
+INFO - [G] LONG DT @ 1143: 0.072276537853659
+INFO - [G] LONG DT @ 1143: 0.068341610282953
+INFO - [G] LONG DT @ 1143: 0.065123028226329
+INFO - [G] LONG DT @ 1143: 0.062479842581085
+INFO - [G] LONG DT @ 1143: 0.060417854064839
+INFO - [G] LONG DT @ 1143: 0.058934923251901
+INFO - [G] LONG DT @ 1143: 0.057530518601507
+INFO - [G] LONG DT @ 1143: 0.056541174881224
+INFO - [G] LONG DT @ 1143: 0.055787219904976
+INFO - [G] LONG DT @ 1143: 0.055122115923954
+INFO - [G] LONG DT @ 1143: 0.054714692739166
+INFO - [G] LONG DT @ 1143: 0.054416194191365
+INFO - [G] LONG DT @ 1143: 0.053947815353084
+INFO - [G] LONG DT @ 1143: 0.053614032282451
+INFO - [G] LONG DT @ 1144: 0.053322125825989
+INFO - [G] LONG DT @ 1144: 0.053138280660758
+INFO - [G] LONG DT @ 1144: 0.052930624528628
+INFO - [G] LONG DT @ 1144: 0.052930519622885
+INFO - [G] LONG DT @ 1144: 0.05287327569833
+INFO - [G] LONG DT @ 1144: 0.052861680558668
+INFO - [G] LONG DT @ 1144: 0.052971724446915
+INFO - [G] LONG DT @ 1144: 0.052855919557517
+INFO - [G] LONG DT @ 1144: 0.052626955646043
+INFO - [G] LONG DT @ 1144: 0.05241138451681
+INFO - [G] LONG DT @ 1144: 0.052315887613447
+INFO - [G] LONG DT @ 1144: 0.052180050090761
+INFO - [G] LONG DT @ 1144: 0.052037520072627
+INFO - [G] LONG DT @ 1144: 0.052141456058084
+INFO - [G] LONG DT @ 1144: 0.05218678484646
+INFO - [G] LONG DT @ 1144: 0.052303227877193
+INFO - [G] LONG DT @ 1144: 0.05232512230173
+INFO - [G] LONG DT @ 1144: 0.052336557841402
+INFO - [G] LONG DT @ 1144: 0.052293946273098
+INFO - [G] LONG DT @ 1145: 0.05225415701848
+INFO - [G] LONG DT @ 1145: 0.052364765614822
+INFO - [G] LONG DT @ 1145: 0.052402232491849
+INFO - [G] LONG DT @ 1145: 0.052369785993476
+INFO - [G] LONG DT @ 1145: 0.052308588794789
+INFO - [G] LONG DT @ 1145: 0.05308389103583
+INFO - [G] LONG DT @ 1145: 0.052911912828669
+INFO - [G] LONG DT @ 1145: 0.052782190262899
+INFO - [G] LONG DT @ 1145: 0.052694252210344
+INFO - [G] LONG DT @ 1145: 0.052779521768286
+INFO - [G] LONG DT @ 1145: 0.052699697414619
+INFO - [G] LONG DT @ 1145: 0.053376297931682
+INFO - [G] LONG DT @ 1145: 0.053145098345354
+INFO - [G] LONG DT @ 1145: 0.053081998676282
+INFO - [G] LONG DT @ 1145: 0.052874478941003
+INFO - [G] LONG DT @ 1145: 0.052899063152822
+INFO - [G] LONG DT @ 1145: 0.052918270522275
+INFO - [G] LONG DT @ 1145: 0.052696256417794
+INFO - [G] LONG DT @ 1145: 0.052588045134238
+INFO - [G] LONG DT @ 1146: 0.052498076107379
+INFO - [G] LONG DT @ 1146: 0.052517840885909
+INFO - [G] LONG DT @ 1146: 0.052402552708734
+INFO - [G] LONG DT @ 1146: 0.05241250216697
+INFO - [G] LONG DT @ 1146: 0.052433881733609
+INFO - [G] LONG DT @ 1146: 0.052429485386872
+INFO - [G] LONG DT @ 1146: 0.052513888309515
+INFO - [G] LONG DT @ 1146: 0.05239729064759
+INFO - [G] LONG DT @ 1146: 0.052338792518082
+INFO - [G] LONG DT @ 1146: 0.05234011401445
+INFO - [G] LONG DT @ 1146: 0.052393771211571
+INFO - [G] LONG DT @ 1146: 0.052698316969259
+INFO - [G] LONG DT @ 1146: 0.05267553357543
+INFO - [G] LONG DT @ 1146: 0.05264282686034
+INFO - [G] LONG DT @ 1146: 0.052599101488253
+INFO - [G] LONG DT @ 1146: 0.052458781190602
+INFO - [G] LONG DT @ 1146: 0.052479284952477
+INFO - [G] LONG DT @ 1146: 0.052518867961994
+INFO - [G] LONG DT @ 1146: 0.052495774369596
+INFO - [G] LONG DT @ 1147: 0.05254879949569
+INFO - [G] LONG DT @ 1147: 0.052420739596523
+INFO - [G] LONG DT @ 1147: 0.052316691677239
+INFO - [G] LONG DT @ 1147: 0.052222873341786
+INFO - [G] LONG DT @ 1147: 0.052212258673429
+INFO - [G] LONG DT @ 1147: 0.052370526938745
+INFO - [G] LONG DT @ 1147: 0.052243081551001
+INFO - [G] LONG DT @ 1147: 0.0923108452408
+INFO - [G] LONG DT @ 1147: 0.084290276192607
+INFO - [G] LONG DT @ 1147: 0.0777967209541
+INFO - [G] LONG DT @ 1147: 0.072614816763282
+INFO - [G] LONG DT @ 1147: 0.068483953410616
+INFO - [G] LONG DT @ 1147: 0.065207802728522
+INFO - [G] LONG DT @ 1147: 0.06271956218278
+INFO - [G] LONG DT @ 1147: 0.060584629746235
+INFO - [G] LONG DT @ 1147: 0.059095463796977
+INFO - [G] LONG DT @ 1148: 0.057673471037582
+INFO - [G] LONG DT @ 1148: 0.056567536830079
+INFO - [G] LONG DT @ 1148: 0.055781089464067
+INFO - [G] LONG DT @ 1148: 0.055041111571249
+INFO - [G] LONG DT @ 1148: 0.054440569257025
+INFO - [G] LONG DT @ 1148: 0.0540167154056
+INFO - [G] LONG DT @ 1148: 0.053622712324504
+INFO - [G] LONG DT @ 1148: 0.053424789859576
+INFO - [G] LONG DT @ 1148: 0.053180251887647
+INFO - [G] LONG DT @ 1148: 0.052969641510135
+INFO - [G] LONG DT @ 1148: 0.05280385320813
+INFO - [G] LONG DT @ 1148: 0.052701062566505
+INFO - [G] LONG DT @ 1148: 0.052652190053203
+INFO - [G] LONG DT @ 1148: 0.052548892042564
+INFO - [G] LONG DT @ 1148: 0.052506933634036
+INFO - [G] LONG DT @ 1148: 0.052653326907228
+INFO - [G] LONG DT @ 1148: 0.05254396152579
+INFO - [G] LONG DT @ 1148: 0.052502329220639
+INFO - [G] LONG DT @ 1149: 0.052652383376502
+INFO - [G] LONG DT @ 1149: 0.052569566701201
+INFO - [G] LONG DT @ 1149: 0.052472913360947
+INFO - [G] LONG DT @ 1149: 0.05225067068874
+INFO - [G] LONG DT @ 1149: 0.052336316551002
+INFO - [G] LONG DT @ 1149: 0.052209093240829
+INFO - [G] LONG DT @ 1149: 0.05216627459267
+INFO - [G] LONG DT @ 1149: 0.052142719674127
+INFO - [G] LONG DT @ 1149: 0.052230955739291
+INFO - [G] LONG DT @ 1149: 0.052267064591445
+INFO - [G] LONG DT @ 1149: 0.052352831673134
+INFO - [G] LONG DT @ 1149: 0.052281345338532
+INFO - [G] LONG DT @ 1149: 0.052236776270812
+INFO - [G] LONG DT @ 1149: 0.052106761016632
+INFO - [G] LONG DT @ 1149: 0.051998388813332
+INFO - [G] LONG DT @ 1149: 0.052719071050661
+INFO - [G] LONG DT @ 1149: 0.052502456840512
+INFO - [G] LONG DT @ 1149: 0.052329825472416
+INFO - [G] LONG DT @ 1149: 0.052325500377927
+INFO - [G] LONG DT @ 1150: 0.052322360302362
+INFO - [G] LONG DT @ 1150: 0.052285768241887
+INFO - [G] LONG DT @ 1150: 0.052256434593505
+INFO - [G] LONG DT @ 1150: 0.052194887674786
+INFO - [G] LONG DT @ 1150: 0.052220270139844
+INFO - [G] LONG DT @ 1150: 0.052105816111852
+INFO - [G] LONG DT @ 1150: 0.052082132889511
+INFO - [G] LONG DT @ 1150: 0.0520257063116
+INFO - [G] LONG DT @ 1150: 0.052021225049285
+INFO - [G] LONG DT @ 1150: 0.051917440039435
+INFO - [G] LONG DT @ 1150: 0.051862232031524
+INFO - [G] LONG DT @ 1150: 0.052026525625217
+INFO - [G] LONG DT @ 1150: 0.052034580500203
+INFO - [G] LONG DT @ 1150: 0.052093924400138
+INFO - [G] LONG DT @ 1150: 0.052068839520097
+INFO - [G] LONG DT @ 1150: 0.052161311616118
+INFO - [G] LONG DT @ 1150: 0.052105409292858
+INFO - [G] LONG DT @ 1150: 0.051979547434321
+INFO - [G] LONG DT @ 1150: 0.052043637947423
+INFO - [G] LONG DT @ 1150: 0.052013490357935
+INFO - [G] LONG DT @ 1151: 0.052114312286369
+INFO - [G] LONG DT @ 1151: 0.052281889829082
+INFO - [G] LONG DT @ 1151: 0.052334791863262
+INFO - [G] LONG DT @ 1151: 0.052384673490646
+INFO - [G] LONG DT @ 1151: 0.052375898792499
+INFO - [G] LONG DT @ 1151: 0.052451079033979
+INFO - [G] LONG DT @ 1151: 0.05242472322721
+INFO - [G] LONG DT @ 1151: 0.052492738581764
+INFO - [G] LONG DT @ 1151: 0.052469630865393
+INFO - [G] LONG DT @ 1151: 0.05229724469231
+INFO - [G] LONG DT @ 1151: 0.052083155753847
+INFO - [G] LONG DT @ 1151: 0.052216204603108
+INFO - [G] LONG DT @ 1151: 0.052263123682459
+INFO - [G] LONG DT @ 1151: 0.091756358945992
+INFO - [G] LONG DT @ 1151: 0.083932107156766
+INFO - [G] LONG DT @ 1151: 0.078053405725436
+INFO - [G] LONG DT @ 1152: 0.07299486458033
+INFO - [G] LONG DT @ 1152: 0.069038211664298
+INFO - [G] LONG DT @ 1152: 0.065794329331406
+INFO - [G] LONG DT @ 1152: 0.06310154346514
+INFO - [G] LONG DT @ 1152: 0.060941894772102
+INFO - [G] LONG DT @ 1152: 0.059061355817677
+INFO - [G] LONG DT @ 1152: 0.057509604654162
+INFO - [G] LONG DT @ 1152: 0.056593303723313
+INFO - [G] LONG DT @ 1152: 0.05570986297865
+INFO - [G] LONG DT @ 1152: 0.055192030382947
+INFO - [G] LONG DT @ 1152: 0.05479834430634
+INFO - [G] LONG DT @ 1152: 0.054356615445071
+INFO - [G] LONG DT @ 1152: 0.053892492356066
+INFO - [G] LONG DT @ 1152: 0.053611413884854
+INFO - [G] LONG DT @ 1152: 0.053237051107887
+INFO - [G] LONG DT @ 1152: 0.052965900886285
+INFO - [G] LONG DT @ 1152: 0.052670900709046
+INFO - [G] LONG DT @ 1152: 0.052664160567224
+INFO - [G] LONG DT @ 1153: 0.052616248453778
+INFO - [G] LONG DT @ 1153: 0.05250615876303
+INFO - [G] LONG DT @ 1153: 0.052485007010403
+INFO - [G] LONG DT @ 1153: 0.052425545608343
+INFO - [G] LONG DT @ 1153: 0.052215356486658
+INFO - [G] LONG DT @ 1153: 0.052382845189358
+INFO - [G] LONG DT @ 1153: 0.052336196151465
+INFO - [G] LONG DT @ 1153: 0.052243276921155
+INFO - [G] LONG DT @ 1153: 0.052150521536937
+INFO - [G] LONG DT @ 1153: 0.052453297229573
+INFO - [G] LONG DT @ 1153: 0.052515997783653
+INFO - [G] LONG DT @ 1153: 0.052547478226923
+INFO - [G] LONG DT @ 1153: 0.052883962581515
+INFO - [G] LONG DT @ 1153: 0.052710270065242
+INFO - [G] LONG DT @ 1153: 0.052538016052183
+INFO - [G] LONG DT @ 1153: 0.052462652841747
+INFO - [G] LONG DT @ 1153: 0.052548602273401
+INFO - [G] LONG DT @ 1153: 0.052661561818727
+INFO - [G] LONG DT @ 1153: 0.052506349454987
+INFO - [G] LONG DT @ 1154: 0.05237861956399
+INFO - [G] LONG DT @ 1154: 0.052351315651158
+INFO - [G] LONG DT @ 1154: 0.052920532520926
+INFO - [G] LONG DT @ 1154: 0.052724346016734
+INFO - [G] LONG DT @ 1154: 0.05263233681342
+INFO - [G] LONG DT @ 1154: 0.052760049450719
+INFO - [G] LONG DT @ 1154: 0.0526456995606
+INFO - [G] LONG DT @ 1154: 0.052490439648478
+INFO - [G] LONG DT @ 1154: 0.052310551718765
+INFO - [G] LONG DT @ 1154: 0.052572161375
+INFO - [G] LONG DT @ 1154: 0.052543229100004
+INFO - [G] LONG DT @ 1154: 0.052569203280002
+INFO - [G] LONG DT @ 1154: 0.052506102623989
+INFO - [G] LONG DT @ 1154: 0.052315582099227
+INFO - [G] LONG DT @ 1154: 0.052172645679344
+INFO - [G] LONG DT @ 1154: 0.052129596543519
+INFO - [G] LONG DT @ 1154: 0.052083797234806
+INFO - [G] LONG DT @ 1154: 0.052077677787854
+INFO - [G] LONG DT @ 1154: 0.052116522230248
+INFO - [G] LONG DT @ 1155: 0.052041837784212
+INFO - [G] LONG DT @ 1155: 0.052155050227392
+INFO - [G] LONG DT @ 1155: 0.052135520181907
+INFO - [G] LONG DT @ 1155: 0.052127716145492
+INFO - [G] LONG DT @ 1155: 0.052325372916403
+INFO - [G] LONG DT @ 1155: 0.05254273833315
+INFO - [G] LONG DT @ 1155: 0.052418610666511
+INFO - [G] LONG DT @ 1155: 0.052248968533198
+INFO - [G] LONG DT @ 1155: 0.052247554826538
+INFO - [G] LONG DT @ 1155: 0.052123083861274
+INFO - [G] LONG DT @ 1155: 0.05215856708902
+INFO - [G] LONG DT @ 1155: 0.052057073671185
+INFO - [G] LONG DT @ 1155: 0.052179718936957
+INFO - [G] LONG DT @ 1155: 0.052331215149583
+INFO - [G] LONG DT @ 1155: 0.052260292119664
+INFO - [G] LONG DT @ 1155: 0.052406053695707
+INFO - [G] LONG DT @ 1155: 0.052280282956577
+INFO - [G] LONG DT @ 1155: 0.052178166365266
+INFO - [G] LONG DT @ 1155: 0.052039433092216
+INFO - [G] LONG DT @ 1156: 0.091174446473779
+INFO - [G] LONG DT @ 1156: 0.083459977178989
+INFO - [G] LONG DT @ 1156: 0.077048601743195
+INFO - [G] LONG DT @ 1156: 0.072077781394564
+INFO - [G] LONG DT @ 1156: 0.068227785115638
+INFO - [G] LONG DT @ 1156: 0.06485674809254
+INFO - [G] LONG DT @ 1156: 0.06227329847401
+INFO - [G] LONG DT @ 1156: 0.0601812187792
+INFO - [G] LONG DT @ 1156: 0.058535715023362
+INFO - [G] LONG DT @ 1156: 0.057116512018725
+INFO - [G] LONG DT @ 1156: 0.056068069614981
+INFO - [G] LONG DT @ 1156: 0.055228555691975
+INFO - [G] LONG DT @ 1156: 0.054528464553578
+INFO - [G] LONG DT @ 1156: 0.053985151642878
+INFO - [G] LONG DT @ 1156: 0.053500841314258
+INFO - [G] LONG DT @ 1156: 0.053786933051434
+INFO - [G] LONG DT @ 1157: 0.053480026441156
+INFO - [G] LONG DT @ 1157: 0.053142081152923
+INFO - [G] LONG DT @ 1157: 0.053052324922313
+INFO - [G] LONG DT @ 1157: 0.052805739937873
+INFO - [G] LONG DT @ 1157: 0.052577831950298
+INFO - [G] LONG DT @ 1157: 0.052454145560236
+INFO - [G] LONG DT @ 1157: 0.052452556448159
+INFO - [G] LONG DT @ 1157: 0.052287745158548
+INFO - [G] LONG DT @ 1157: 0.052589556126859
+INFO - [G] LONG DT @ 1157: 0.052436804901479
+INFO - [G] LONG DT @ 1157: 0.052553183921171
+INFO - [G] LONG DT @ 1157: 0.052473227136927
+INFO - [G] LONG DT @ 1157: 0.052328641709561
+INFO - [G] LONG DT @ 1157: 0.052202553367632
+INFO - [G] LONG DT @ 1157: 0.052137522694099
+INFO - [G] LONG DT @ 1157: 0.052276298155291
+INFO - [G] LONG DT @ 1157: 0.052324938524236
+INFO - [G] LONG DT @ 1157: 0.052355530819386
+INFO - [G] LONG DT @ 1157: 0.05222070465551
+INFO - [G] LONG DT @ 1158: 0.052200863724431
+INFO - [G] LONG DT @ 1158: 0.052181210979524
+INFO - [G] LONG DT @ 1158: 0.05219550878363
+INFO - [G] LONG DT @ 1158: 0.05224966702688
+INFO - [G] LONG DT @ 1158: 0.052115453621521
+INFO - [G] LONG DT @ 1158: 0.052129822897219
+INFO - [G] LONG DT @ 1158: 0.052131298317788
+INFO - [G] LONG DT @ 1158: 0.052863538654195
+INFO - [G] LONG DT @ 1158: 0.052911830923393
+INFO - [G] LONG DT @ 1158: 0.052837904738682
+INFO - [G] LONG DT @ 1158: 0.052939063790974
+INFO - [G] LONG DT @ 1158: 0.052726371032759
+INFO - [G] LONG DT @ 1158: 0.052707596826222
+INFO - [G] LONG DT @ 1158: 0.052613377460965
+INFO - [G] LONG DT @ 1158: 0.052550281968769
+INFO - [G] LONG DT @ 1158: 0.052490465575015
+INFO - [G] LONG DT @ 1158: 0.052490112459995
+INFO - [G] LONG DT @ 1158: 0.052328609968006
+INFO - [G] LONG DT @ 1158: 0.052393107974414
+INFO - [G] LONG DT @ 1159: 0.052291566379521
+INFO - [G] LONG DT @ 1159: 0.052464173103611
+INFO - [G] LONG DT @ 1159: 0.05239033848289
+INFO - [G] LONG DT @ 1159: 0.052364910786352
+INFO - [G] LONG DT @ 1159: 0.052421388629079
+INFO - [G] LONG DT @ 1159: 0.052487890903258
+INFO - [G] LONG DT @ 1159: 0.052525072722579
+INFO - [G] LONG DT @ 1159: 0.052458078178056
+INFO - [G] LONG DT @ 1159: 0.052631182542467
+INFO - [G] LONG DT @ 1159: 0.052528826033981
+INFO - [G] LONG DT @ 1159: 0.052449580827195
+INFO - [G] LONG DT @ 1159: 0.052357384661748
+INFO - [G] LONG DT @ 1159: 0.052462067729381
+INFO - [G] LONG DT @ 1159: 0.052338794183516
+INFO - [G] LONG DT @ 1159: 0.052361955346797
+INFO - [G] LONG DT @ 1159: 0.052462184277431
+INFO - [G] LONG DT @ 1159: 0.052611067421958
+INFO - [G] LONG DT @ 1159: 0.05244905393758
+INFO - [G] LONG DT @ 1159: 0.052296383150066
+INFO - [G] LONG DT @ 1160: 0.052408366520059
+INFO - [G] LONG DT @ 1160: 0.052365213216027
+INFO - [G] LONG DT @ 1160: 0.052411950572825
+INFO - [G] LONG DT @ 1160: 0.052493700458257
+INFO - [G] LONG DT @ 1160: 0.091383600366612
+INFO - [G] LONG DT @ 1160: 0.083517540293269
+INFO - [G] LONG DT @ 1160: 0.077275692234625
+INFO - [G] LONG DT @ 1160: 0.072236133787717
+INFO - [G] LONG DT @ 1160: 0.068271787030146
+INFO - [G] LONG DT @ 1160: 0.065145869624124
+INFO - [G] LONG DT @ 1160: 0.06295707569929
+INFO - [G] LONG DT @ 1160: 0.060846240559444
+INFO - [G] LONG DT @ 1160: 0.059113332447579
+INFO - [G] LONG DT @ 1160: 0.058013865958047
+INFO - [G] LONG DT @ 1160: 0.05706323276644
+INFO - [G] LONG DT @ 1160: 0.056160726213149
+INFO - [G] LONG DT @ 1161: 0.055328960970529
+INFO - [G] LONG DT @ 1161: 0.054519168776404
+INFO - [G] LONG DT @ 1161: 0.054145795021142
+INFO - [G] LONG DT @ 1161: 0.053715476016884
+INFO - [G] LONG DT @ 1161: 0.053355000813526
+INFO - [G] LONG DT @ 1161: 0.053139720650802
+INFO - [G] LONG DT @ 1161: 0.053037796520639
+INFO - [G] LONG DT @ 1161: 0.052752637216552
+INFO - [G] LONG DT @ 1161: 0.052574709773224
+INFO - [G] LONG DT @ 1161: 0.052554807818557
+INFO - [G] LONG DT @ 1161: 0.052475246254862
+INFO - [G] LONG DT @ 1161: 0.052341697003889
+INFO - [G] LONG DT @ 1161: 0.052363177603132
+INFO - [G] LONG DT @ 1161: 0.052274702082472
+INFO - [G] LONG DT @ 1161: 0.052586961665987
+INFO - [G] LONG DT @ 1161: 0.05254466933282
+INFO - [G] LONG DT @ 1161: 0.052409935466235
+INFO - [G] LONG DT @ 1161: 0.052426848372981
+INFO - [G] LONG DT @ 1162: 0.05244685869838
+INFO - [G] LONG DT @ 1162: 0.052618566958704
+INFO - [G] LONG DT @ 1162: 0.052616333566997
+INFO - [G] LONG DT @ 1162: 0.052579566853577
+INFO - [G] LONG DT @ 1162: 0.052591733482856
+INFO - [G] LONG DT @ 1162: 0.052562866786309
+INFO - [G] LONG DT @ 1162: 0.052441133429038
+INFO - [G] LONG DT @ 1162: 0.052377526743234
+INFO - [G] LONG DT @ 1162: 0.052450981394592
+INFO - [G] LONG DT @ 1162: 0.052394965115667
+INFO - [G] LONG DT @ 1162: 0.052369772092538
+INFO - [G] LONG DT @ 1162: 0.052240597673999
+INFO - [G] LONG DT @ 1162: 0.052889918139203
+INFO - [G] LONG DT @ 1162: 0.05283809451138
+INFO - [G] LONG DT @ 1162: 0.052659095609107
+INFO - [G] LONG DT @ 1162: 0.052477496487295
+INFO - [G] LONG DT @ 1162: 0.052345757189809
+INFO - [G] LONG DT @ 1162: 0.052188605751869
+INFO - [G] LONG DT @ 1162: 0.052099064601478
+INFO - [G] LONG DT @ 1163: 0.052005131681164
+INFO - [G] LONG DT @ 1163: 0.052025825344954
+INFO - [G] LONG DT @ 1163: 0.051927680275945
+INFO - [G] LONG DT @ 1163: 0.052037724220753
+INFO - [G] LONG DT @ 1163: 0.052057279376618
+INFO - [G] LONG DT @ 1163: 0.05203608350128
+INFO - [G] LONG DT @ 1163: 0.052042166801051
+INFO - [G] LONG DT @ 1163: 0.052033393440826
+INFO - [G] LONG DT @ 1163: 0.052074914752679
+INFO - [G] LONG DT @ 1163: 0.052069751802139
+INFO - [G] LONG DT @ 1163: 0.052025721441705
+INFO - [G] LONG DT @ 1163: 0.052080157153361
+INFO - [G] LONG DT @ 1163: 0.051975945722704
+INFO - [G] LONG DT @ 1163: 0.051968516578166
+INFO - [G] LONG DT @ 1163: 0.052007513262534
+INFO - [G] LONG DT @ 1163: 0.05192791060999
+INFO - [G] LONG DT @ 1166: 0.1
+INFO - [G] LONG DT @ 1166: 0.1
+INFO - [G] LONG DT @ 1166: 0.084776059999995
+INFO - [G] LONG DT @ 1166: 0.073680128
+INFO - [G] LONG DT @ 1166: 0.063709762399975
+INFO - [G] LONG DT @ 1166: 0.056772449919977
+INFO - [G] LONG DT @ 1166: 0.050237179935972
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:43:43 :: DEBUG :: SMODS.https(20) :: Using https module backend
+INFO - [G] LONG DT @ 1178: 0.1
+INFO - [G] LONG DT @ 1178: 0.1
+INFO - [G] LONG DT @ 1178: 0.08436993999997
+INFO - [G] LONG DT @ 1178: 0.088208051999967
+INFO - [G] LONG DT @ 1178: 0.075616621600009
+INFO - [G] LONG DT @ 1178: 0.06490631728
+INFO - [G] LONG DT @ 1178: 0.056360373823993
+INFO - [G] LONG DT @ 1189: 0.1
+INFO - [G] LONG DT @ 1189: 0.084744320000009
+INFO - [G] LONG DT @ 1190: 0.072508116000003
+INFO - [G] LONG DT @ 1190: 0.062988252800012
+INFO - [G] LONG DT @ 1190: 0.055214062239998
+INFO - [G] LONG DT @ 1190: 0.050636009792016
+INFO - [G] LONG DT @ 1198: 0.1
+INFO - [G] LONG DT @ 1198: 0.088363880000024
+INFO - [G] LONG DT @ 1198: 0.078771064000006
+INFO - [G] LONG DT @ 1198: 0.07152975120001
+INFO - [G] LONG DT @ 1198: 0.063459280959995
+INFO - [G] LONG DT @ 1198: 0.057413664768005
+INFO - [G] LONG DT @ 1198: 0.05337149181439
+INFO - [G] LONG DT @ 1199: 0.050136733451508
+INFO - [G] LONG DT @ 1209: 0.058785392897745
+INFO - [G] LONG DT @ 1209: 0.052534434318214
+INFO - [G] LONG DT @ 1215: 0.1
+INFO - [G] LONG DT @ 1215: 0.085792819999988
+INFO - [G] LONG DT @ 1215: 0.073975056000012
+INFO - [G] LONG DT @ 1215: 0.064483364799994
+INFO - [G] LONG DT @ 1215: 0.05698029184002
+INFO - [G] LONG DT @ 1215: 0.053147333471986
+INFO - [G] LONG DT @ 1215: 0.050738426777607
+INFO - [G] LONG DT @ 1219: 0.1
+INFO - [G] LONG DT @ 1219: 0.1
+INFO - [G] LONG DT @ 1219: 0.085781499999966
+INFO - [G] LONG DT @ 1219: 0.074383680000004
+INFO - [G] LONG DT @ 1219: 0.065232703999999
+INFO - [G] LONG DT @ 1219: 0.06038982319998
+INFO - [G] LONG DT @ 1219: 0.057392858559999
+INFO - [G] LONG DT @ 1219: 0.054462486847995
+INFO - [G] LONG DT @ 1219: 0.05231956947839
+INFO - [G] LONG DT @ 1219: 0.050442815582691
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:44:43 :: DEBUG :: SMODS.https(21) :: Using https module backend
+INFO - [G] LONG DT @ 1252: 0.060807050639466
+INFO - [G] LONG DT @ 1252: 0.054835760511547
+INFO - [G] LONG DT @ 1252: 0.050078028409242
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:45:43 :: DEBUG :: SMODS.https(22) :: Using https module backend
+INFO - [G] LONG DT @ 1289: 0.059160967314196
+INFO - [G] LONG DT @ 1289: 0.053372773851331
+INFO - [G] LONG DT @ 1316: 0.052682176106113
+INFO - [G] LONG DT @ 1328: 0.053663300776897
+INFO - [G] LONG DT @ 1328: 0.096732380621535
+INFO - [G] LONG DT @ 1328: 0.084387464497208
+INFO - [G] LONG DT @ 1328: 0.073890891597759
+INFO - [G] LONG DT @ 1328: 0.065232173278243
+INFO - [G] LONG DT @ 1328: 0.058402418622583
+INFO - [G] LONG DT @ 1328: 0.052849574898044
+INFO - [G] LONG DT @ 1336: 0.1
+INFO - [G] LONG DT @ 1336: 0.086352620000007
+INFO - [G] LONG DT @ 1336: 0.07523581599998
+INFO - [G] LONG DT @ 1336: 0.066494012800017
+INFO - [G] LONG DT @ 1336: 0.059245230239989
+INFO - [G] LONG DT @ 1336: 0.056269964192013
+INFO - [G] LONG DT @ 1336: 0.054627031353608
+INFO - [G] LONG DT @ 1336: 0.053561645082883
+INFO - [G] LONG DT @ 1336: 0.052668916066298
+INFO - [G] LONG DT @ 1336: 0.052100152853065
+INFO - [G] LONG DT @ 1336: 0.05162248228242
+INFO - [G] LONG DT @ 1336: 0.05097808582595
+INFO - [G] LONG DT @ 1336: 0.050336148660759
+INFO - [G] LONG DT @ 1337: 0.050124538928615
+INFO - [G] LONG DT @ 1337: 0.050193908722587
+INFO - [G] LONG DT @ 1337: 0.084414446978062
+INFO - [G] LONG DT @ 1337: 0.077635637582423
+INFO - [G] LONG DT @ 1337: 0.072158350065949
+INFO - [G] LONG DT @ 1338: 0.068323200052749
+INFO - [G] LONG DT @ 1338: 0.064953220042199
+INFO - [G] LONG DT @ 1338: 0.058562916033782
+INFO - [G] LONG DT @ 1338: 0.05311775282702
+INFO - [G] LONG DT @ 1343: 0.1
+INFO - [G] LONG DT @ 1343: 0.1
+INFO - [G] LONG DT @ 1343: 0.086553559999975
+INFO - [G] LONG DT @ 1343: 0.075619288000011
+INFO - [G] LONG DT @ 1343: 0.066925330400021
+INFO - [G] LONG DT @ 1343: 0.063082964319991
+INFO - [G] LONG DT @ 1343: 0.060886291455997
+INFO - [G] LONG DT @ 1344: 0.059643193164785
+INFO - [G] LONG DT @ 1344: 0.058065874531846
+INFO - [G] LONG DT @ 1344: 0.057256059625477
+INFO - [G] LONG DT @ 1344: 0.056249527700382
+INFO - [G] LONG DT @ 1344: 0.055204322160291
+INFO - [G] LONG DT @ 1344: 0.054830497728231
+INFO - [G] LONG DT @ 1344: 0.054262978182577
+INFO - [G] LONG DT @ 1344: 0.054124602546061
+INFO - [G] LONG DT @ 1344: 0.054024742036853
+INFO - [G] LONG DT @ 1344: 0.054032653629516
+INFO - [G] LONG DT @ 1344: 0.054123742903581
+INFO - [G] LONG DT @ 1344: 0.053891634322869
+INFO - [G] LONG DT @ 1344: 0.054007207458315
+INFO - [G] LONG DT @ 1344: 0.054289525966626
+INFO - [G] LONG DT @ 1344: 0.054236060773293
+INFO - [G] LONG DT @ 1344: 0.054186188618634
+INFO - [G] LONG DT @ 1344: 0.05413395089494
+INFO - [G] LONG DT @ 1344: 0.054213020715954
+INFO - [G] LONG DT @ 1345: 0.054598336572728
+INFO - [G] LONG DT @ 1345: 0.054583189258214
+INFO - [G] LONG DT @ 1345: 0.054817951406542
+INFO - [G] LONG DT @ 1345: 0.054866841125233
+INFO - [G] LONG DT @ 1345: 0.054968972900202
+INFO - [G] LONG DT @ 1345: 0.055486278320169
+INFO - [G] LONG DT @ 1345: 0.055385062656144
+INFO - [G] LONG DT @ 1345: 0.055703570124912
+INFO - [G] LONG DT @ 1345: 0.056001716099928
+INFO - [G] LONG DT @ 1345: 0.056104012879927
+INFO - [G] LONG DT @ 1345: 0.056171330303959
+INFO - [G] LONG DT @ 1345: 0.05215224424317
+INFO - [G] LONG DT @ 1348: 0.1
+INFO - [G] LONG DT @ 1348: 0.1
+INFO - [G] LONG DT @ 1348: 0.087782560000032
+INFO - [G] LONG DT @ 1348: 0.077256648000033
+INFO - [G] LONG DT @ 1348: 0.068998478400024
+INFO - [G] LONG DT @ 1348: 0.066169382719992
+INFO - [G] LONG DT @ 1348: 0.064527546175999
+INFO - [G] LONG DT @ 1348: 0.063402936940784
+INFO - [G] LONG DT @ 1348: 0.062593369552662
+INFO - [G] LONG DT @ 1348: 0.061918455642095
+INFO - [G] LONG DT @ 1348: 0.061417184513705
+INFO - [G] LONG DT @ 1348: 0.061306687610946
+INFO - [G] LONG DT @ 1348: 0.060874870088749
+INFO - [G] LONG DT @ 1349: 0.060608496071014
+INFO - [G] LONG DT @ 1349: 0.061945156856816
+INFO - [G] LONG DT @ 1349: 0.062961245485468
+INFO - [G] LONG DT @ 1349: 0.062776196388336
+INFO - [G] LONG DT @ 1349: 0.062459277110675
+INFO - [G] LONG DT @ 1349: 0.061808081688547
+INFO - [G] LONG DT @ 1349: 0.061586745350832
+INFO - [G] LONG DT @ 1349: 0.06102013628069
+INFO - [G] LONG DT @ 1349: 0.061071889024539
+INFO - [G] LONG DT @ 1349: 0.060861891219639
+INFO - [G] LONG DT @ 1349: 0.060707072975715
+INFO - [G] LONG DT @ 1349: 0.060792858380579
+INFO - [G] LONG DT @ 1349: 0.061171226704436
+INFO - [G] LONG DT @ 1349: 0.061754921363562
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:46:50 :: DEBUG :: SMODS.https(23) :: Using https module backend
+INFO - [G] LONG DT @ 1349: 0.062801357090851
+INFO - [G] LONG DT @ 1349: 0.063183145672658
+INFO - [G] LONG DT @ 1350: 0.063273356538131
+INFO - [G] LONG DT @ 1350: 0.063791725230497
+INFO - [G] LONG DT @ 1350: 0.063919840184425
+INFO - [G] LONG DT @ 1350: 0.064126052147537
+INFO - [G] LONG DT @ 1350: 0.064464861718006
+INFO - [G] LONG DT @ 1350: 0.064746249374444
+INFO - [G] LONG DT @ 1350: 0.06468255949955
+INFO - [G] LONG DT @ 1350: 0.065051507599633
+INFO - [G] LONG DT @ 1350: 0.0649237260797
+INFO - [G] LONG DT @ 1350: 0.065474980863736
+INFO - [G] LONG DT @ 1350: 0.064961764691017
+INFO - [G] LONG DT @ 1350: 0.065568371752804
+INFO - [G] LONG DT @ 1350: 0.060168737402262
+INFO - [G] LONG DT @ 1350: 0.055944289921772
+INFO - [G] LONG DT @ 1350: 0.052233171937431
+INFO - [G] LONG DT @ 1361: 0.1
+INFO - [G] LONG DT @ 1361: 0.1
+INFO - [G] LONG DT @ 1361: 0.087300320000013
+INFO - [G] LONG DT @ 1362: 0.077197276000028
+INFO - [G] LONG DT @ 1362: 0.069477940799999
+INFO - [G] LONG DT @ 1362: 0.067752492639988
+INFO - [G] LONG DT @ 1362: 0.067279294112022
+INFO - [G] LONG DT @ 1362: 0.066988595289589
+INFO - [G] LONG DT @ 1362: 0.066974336231694
+INFO - [G] LONG DT @ 1362: 0.066480908985351
+INFO - [G] LONG DT @ 1362: 0.066479747188268
+INFO - [G] LONG DT @ 1362: 0.066454977750607
+INFO - [G] LONG DT @ 1362: 0.066327182200494
+INFO - [G] LONG DT @ 1362: 0.066302545760389
+INFO - [G] LONG DT @ 1362: 0.067524376608306
+INFO - [G] LONG DT @ 1362: 0.067846641286657
+INFO - [G] LONG DT @ 1362: 0.067932053029318
+INFO - [G] LONG DT @ 1362: 0.067709522423452
+INFO - [G] LONG DT @ 1363: 0.067703577938797
+INFO - [G] LONG DT @ 1363: 0.068112962351003
+INFO - [G] LONG DT @ 1363: 0.068071789880839
+INFO - [G] LONG DT @ 1363: 0.068267931904671
+INFO - [G] LONG DT @ 1363: 0.068379325523733
+INFO - [G] LONG DT @ 1363: 0.068584700418987
+INFO - [G] LONG DT @ 1363: 0.06848972033519
+INFO - [G] LONG DT @ 1363: 0.068802476268124
+INFO - [G] LONG DT @ 1363: 0.069350741014493
+INFO - [G] LONG DT @ 1363: 0.069309272811601
+INFO - [G] LONG DT @ 1363: 0.068918378249276
+INFO - [G] LONG DT @ 1363: 0.068923942599426
+INFO - [G] LONG DT @ 1363: 0.069083614079534
+INFO - [G] LONG DT @ 1363: 0.069282151263624
+INFO - [G] LONG DT @ 1363: 0.069508461010903
+INFO - [G] LONG DT @ 1364: 0.06949662880874
+INFO - [G] LONG DT @ 1364: 0.070488963047004
+INFO - [G] LONG DT @ 1364: 0.070762310437606
+INFO - [G] LONG DT @ 1364: 0.072225928350057
+INFO - [G] LONG DT @ 1364: 0.075587162680034
+INFO - [G] LONG DT @ 1364: 0.074631350144031
+INFO - [G] LONG DT @ 1364: 0.075059740115228
+INFO - [G] LONG DT @ 1364: 0.075253952092207
+INFO - [G] LONG DT @ 1364: 0.075718961673769
+INFO - [G] LONG DT @ 1364: 0.075554549338992
+INFO - [G] LONG DT @ 1364: 0.068068779471221
+INFO - [G] LONG DT @ 1364: 0.062025583576953
+INFO - [G] LONG DT @ 1364: 0.05735432686157
+INFO - [G] LONG DT @ 1364: 0.053662341489234
+INFO - [G] LONG DT @ 1365: 0.050359413191408
+INFO - [G] LONG DT @ 1367: 0.1
+INFO - [G] LONG DT @ 1367: 0.1
+INFO - [G] LONG DT @ 1368: 0.087714960000021
+INFO - [G] LONG DT @ 1368: 0.078089168000037
+INFO - [G] LONG DT @ 1368: 0.070198774399992
+INFO - [G] LONG DT @ 1368: 0.069765499519992
+INFO - [G] LONG DT @ 1368: 0.070858839616008
+INFO - [G] LONG DT @ 1368: 0.071673951692822
+INFO - [G] LONG DT @ 1368: 0.072887741354252
+INFO - [G] LONG DT @ 1368: 0.07348459308338
+INFO - [G] LONG DT @ 1368: 0.074904514466699
+INFO - [G] LONG DT @ 1368: 0.074358631573378
+INFO - [G] LONG DT @ 1368: 0.074755025258721
+INFO - [G] LONG DT @ 1368: 0.074816600206961
+INFO - [G] LONG DT @ 1368: 0.074833060165591
+INFO - [G] LONG DT @ 1368: 0.075253688132445
+INFO - [G] LONG DT @ 1369: 0.075229990505952
+INFO - [G] LONG DT @ 1369: 0.075171312404761
+INFO - [G] LONG DT @ 1369: 0.075060909923808
+INFO - [G] LONG DT @ 1369: 0.074970787939073
+INFO - [G] LONG DT @ 1369: 0.074697110351264
+INFO - [G] LONG DT @ 1369: 0.074881608281007
+INFO - [G] LONG DT @ 1369: 0.074835006624769
+INFO - [G] LONG DT @ 1369: 0.075584165299826
+INFO - [G] LONG DT @ 1369: 0.075747372239877
+INFO - [G] LONG DT @ 1369: 0.076486657791909
+INFO - [G] LONG DT @ 1369: 0.076427266233524
+INFO - [G] LONG DT @ 1369: 0.076657952986819
+INFO - [G] LONG DT @ 1369: 0.076957302389438
+INFO - [G] LONG DT @ 1370: 0.077346581911542
+INFO - [G] LONG DT @ 1370: 0.077865105529258
+INFO - [G] LONG DT @ 1370: 0.077848364423417
+INFO - [G] LONG DT @ 1370: 0.07799317153873
+INFO - [G] LONG DT @ 1370: 0.078044937230988
+INFO - [G] LONG DT @ 1370: 0.078495209784765
+INFO - [G] LONG DT @ 1370: 0.079008947827836
+INFO - [G] LONG DT @ 1370: 0.079328978262258
+INFO - [G] LONG DT @ 1370: 0.079439542609774
+INFO - [G] LONG DT @ 1370: 0.080834654087833
+INFO - [G] LONG DT @ 1370: 0.080887823270276
+INFO - [G] LONG DT @ 1370: 0.080992878616213
+INFO - [G] LONG DT @ 1370: 0.081068882892997
+INFO - [G] LONG DT @ 1371: 0.08174426631438
+INFO - [G] LONG DT @ 1371: 0.081938013051507
+INFO - [G] LONG DT @ 1371: 0.081668890441183
+INFO - [G] LONG DT @ 1371: 0.081672252352942
+INFO - [G] LONG DT @ 1371: 0.084805541882381
+INFO - [G] LONG DT @ 1371: 0.08498651350589
+INFO - [G] LONG DT @ 1371: 0.076285550804727
+INFO - [G] LONG DT @ 1371: 0.069147640643792
+INFO - [G] LONG DT @ 1371: 0.063542192515024
+INFO - [G] LONG DT @ 1371: 0.058769254012005
+INFO - [G] LONG DT @ 1371: 0.055527943209596
+INFO - [G] LONG DT @ 1371: 0.052562274567707
+INFO - [G] LONG DT @ 1378: 0.055495263760553
+INFO - [G] LONG DT @ 1378: 0.052603451008444
+INFO - [G] LONG DT @ 1378: 0.050316620806774
+INFO - [G] LONG DT @ 1399: 0.05310886047349
+INFO - [G] LONG DT @ 1399: 0.05312454837879
+INFO - [G] LONG DT @ 1399: 0.1
+INFO - [G] LONG DT @ 1399: 0.1
+INFO - [G] LONG DT @ 1399: 0.097212280000012
+INFO - [G] LONG DT @ 1399: 0.094553303999968
+INFO - [G] LONG DT @ 1399: 0.092871983200014
+INFO - [G] LONG DT @ 1399: 0.091894926559986
+INFO - [G] LONG DT @ 1400: 0.090616641247981
+INFO - [G] LONG DT @ 1400: 0.090390232998406
+INFO - [G] LONG DT @ 1400: 0.090236846398696
+INFO - [G] LONG DT @ 1400: 0.089533757119
+INFO - [G] LONG DT @ 1400: 0.089421525695161
+INFO - [G] LONG DT @ 1400: 0.089012620556141
+INFO - [G] LONG DT @ 1400: 0.089180696444902
+INFO - [G] LONG DT @ 1400: 0.090065237155946
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-04-10 03:47:59 :: DEBUG :: SMODS.https(24) :: Using https module backend
+INFO - [G] LONG DT @ 1400: 0.090521489724727
+INFO - [G] LONG DT @ 1400: 0.090326511779816
+INFO - [G] LONG DT @ 1400: 0.090171089423832
+INFO - [G] LONG DT @ 1401: 0.090150691539053
+INFO - [G] LONG DT @ 1401: 0.089986093231245
+INFO - [G] LONG DT @ 1401: 0.089618694584998
+INFO - [G] LONG DT @ 1401: 0.090200755668001
+INFO - [G] LONG DT @ 1401: 0.09034146453443
+INFO - [G] LONG DT @ 1401: 0.090345211627514
+INFO - [G] LONG DT @ 1401: 0.090186569302039
+INFO - [G] LONG DT @ 1401: 0.0904406754416
+INFO - [G] LONG DT @ 1401: 0.090866020353282
+INFO - [G] LONG DT @ 1401: 0.091285596282642
+INFO - [G] LONG DT @ 1401: 0.091301577026102
+INFO - [G] LONG DT @ 1401: 0.090832861620891
+INFO - [G] LONG DT @ 1402: 0.091932349296731
+INFO - [G] LONG DT @ 1402: 0.091843539437347
+INFO - [G] LONG DT @ 1402: 0.091994711549908
+INFO - [G] LONG DT @ 1402: 0.091985669239938
+INFO - [G] LONG DT @ 1402: 0.091921755391927
+INFO - [G] LONG DT @ 1402: 0.092782104313532
+INFO - [G] LONG DT @ 1402: 0.092993343450828
+INFO - [G] LONG DT @ 1402: 0.09304287476067
+INFO - [G] LONG DT @ 1402: 0.092990939808533
+INFO - [G] LONG DT @ 1402: 0.093109651846853
+INFO - [G] LONG DT @ 1403: 0.093633761477469
+INFO - [G] LONG DT @ 1403: 0.093998449181986
+INFO - [G] LONG DT @ 1403: 0.094745899345575
+INFO - [G] LONG DT @ 1403: 0.095727639476439
+INFO - [G] LONG DT @ 1403: 0.096047151581174
+INFO - [G] LONG DT @ 1403: 0.096573201264948
+INFO - [G] LONG DT @ 1403: 0.097689021011947
+INFO - [G] LONG DT @ 1403: 0.097844056809574
+INFO - [G] LONG DT @ 1403: 0.097881545447646
+INFO - [G] LONG DT @ 1403: 0.097906696358129
+INFO - [G] LONG DT @ 1403: 0.098772057086505
+INFO - [G] LONG DT @ 1404: 0.098987565669198
+INFO - [G] LONG DT @ 1404: 0.099798492535337
+INFO - [G] LONG DT @ 1404: 0.1
+INFO - [G] LONG DT @ 1404: 0.1
+INFO - [G] LONG DT @ 1404: 0.1
+INFO - [G] LONG DT @ 1404: 0.099865459999983
+INFO - [G] LONG DT @ 1404: 0.1
+INFO - [G] LONG DT @ 1404: 0.1
+INFO - [G] LONG DT @ 1404: 0.1
+INFO - [G] LONG DT @ 1404: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1405: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1406: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1407: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1408: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1409: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1410: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1411: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1412: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1413: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1414: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1415: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1416: 0.1
+INFO - [G] LONG DT @ 1417: 0.1
+INFO - [G] LONG DT @ 1417: 0.1
+INFO - [G] LONG DT @ 1417: 0.1
+INFO - [G] LONG DT @ 1417: 0.1
+INFO - [G] LONG DT @ 1417: 0.089837900000002
+INFO - [G] LONG DT @ 1417: 0.081534379999979
+INFO - [G] LONG DT @ 1417: 0.075224964000006
+INFO - [G] LONG DT @ 1417: 0.081898471200002
+INFO - [G] LONG DT @ 1417: 0.074655616959975
+INFO - [G] LONG DT @ 1417: 0.068779673567976
+INFO - [G] LONG DT @ 1417: 0.06428969885442
+INFO - [G] LONG DT @ 1417: 0.060591579083504
+INFO - [G] LONG DT @ 1418: 0.05766804326681
+INFO - [G] LONG DT @ 1418: 0.055373514613446
+INFO - [G] LONG DT @ 1418: 0.053416631690785
+INFO - [G] LONG DT @ 1418: 0.051795825352626
+INFO - [G] LONG DT @ 1418: 0.050590140282087
+INFO - [G] LONG DT @ 1420: 0.051491870809548
+INFO - [G] LONG DT @ 1420: 0.051567596647673
+INFO - [G] LONG DT @ 1420: 0.051914257318107
+INFO - [G] LONG DT @ 1420: 0.051794985854523
+INFO - [G] LONG DT @ 1420: 0.051544708683589
+INFO - [G] LONG DT @ 1420: 0.051544526946869
+INFO - [G] LONG DT @ 1420: 0.051536541557504
+INFO - [G] LONG DT @ 1420: 0.051334933245989
+INFO - [G] LONG DT @ 1420: 0.051357326596831
+INFO - [G] LONG DT @ 1420: 0.051326301277426
+INFO - [G] LONG DT @ 1420: 0.050204841021979
+INFO - [G] LONG DT @ 1426: 0.057123764899549
+INFO - [G] LONG DT @ 1426: 0.055093751919655
+INFO - [G] LONG DT @ 1426: 0.053174241535702
+INFO - [G] LONG DT @ 1426: 0.051953853228578
+INFO - [G] LONG DT @ 1426: 0.05080044258286
+INFO - [G] LONG DT @ 1426: 0.050001734066261
+INFO - [G] LONG DT @ 1428: 0.057319636585432
+INFO - [G] LONG DT @ 1428: 0.055490649268369
+INFO - [G] LONG DT @ 1428: 0.053719899414663
+INFO - [G] LONG DT @ 1429: 0.052584939531747
+INFO - [G] LONG DT @ 1429: 0.051509811625413
+INFO - [G] LONG DT @ 1429: 0.050611169300332
+INFO - [G] LONG DT @ 1430: 0.050569637192796
+INFO - [G] LONG DT @ 1430: 0.051049369754232
+INFO - [G] LONG DT @ 1430: 0.051529995803395
+INFO - [G] LONG DT @ 1430: 0.051814316642744
+INFO - [G] LONG DT @ 1430: 0.050570013314175
+INFO - [G] LONG DT @ 1430: 0.050829517216871
+INFO - [G] LONG DT @ 1430: 0.050818633773499
+INFO - [G] LONG DT @ 1431: 0.057881954984688
+INFO - [G] LONG DT @ 1431: 0.055729743987792
+INFO - [G] LONG DT @ 1431: 0.053748055190222
+INFO - [G] LONG DT @ 1431: 0.051961564152176
+INFO - [G] LONG DT @ 1431: 0.050755331321713
+INFO - [G] LONG DT @ 1432: 0.050326969224738
+INFO - [G] LONG DT @ 1432: 0.05152863537979
+INFO - [G] LONG DT @ 1433: 0.05056356830383
+INFO - [G] LONG DT @ 1433: 0.06096062771444
+INFO - [G] LONG DT @ 1433: 0.057870842171579
+INFO - [G] LONG DT @ 1433: 0.055253813737247
+INFO - [G] LONG DT @ 1433: 0.05356839098982
+INFO - [G] LONG DT @ 1433: 0.052248472791822
+INFO - [G] LONG DT @ 1433: 0.050982318233461
+INFO - [G] LONG DT @ 1434: 0.057934625962636
+INFO - [G] LONG DT @ 1434: 0.055644680770108
+INFO - [G] LONG DT @ 1434: 0.053868024616071
+INFO - [G] LONG DT @ 1434: 0.052180599692888
+INFO - [G] LONG DT @ 1435: 0.051262079754291
+INFO - [G] LONG DT @ 1435: 0.051441187042771
+INFO - [G] LONG DT @ 1435: 0.050383089634217
+INFO - [G] LONG DT @ 1435: 0.050370171707374
+INFO - [G] LONG DT @ 1437: 0.057208438084357
+INFO - [G] LONG DT @ 1437: 0.066002090467485
